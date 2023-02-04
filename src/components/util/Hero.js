@@ -1,5 +1,7 @@
 import {StyleSheet, Image, View, Text} from 'react-native';
 import React from 'react';
+import Heading from '../text/Heading';
+import SubHeading from '../text/SubHeading';
 
 const Hero = () => {
   return (
@@ -8,13 +10,16 @@ const Hero = () => {
         style={styles.image}
         source={require('../../../assets/hero-logo.png')}
       />
-      <Text style={styles.heading}>
-        Let's learn from <Text>the experts!</Text>
-      </Text>
-      <Text style={styles.subHeading}>
-        Join <Text style={styles.highlight}>iou</Text> and explore 500+ courses
-        All on demand, all for USD 25/year
-      </Text>
+      <View style={styles.heading}>
+        <Heading color={'#212529'} size={26}>
+          Let's learn from the experts!
+        </Heading>
+      </View>
+      <View style={styles.subHeading}>
+        <SubHeading color={'#313131'} size={18}>
+          Join iou and explore 500+ courses All on demand, all for USD 25/year
+        </SubHeading>
+      </View>
     </View>
   );
 };
@@ -32,19 +37,10 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   heading: {
-    color: '#212529',
-    fontSize: 26,
-    fontWeight: 'bold',
-    textAlign: 'center',
     paddingHorizontal: 100,
   },
   subHeading: {
-    color: '#313131',
-    fontSize: 18,
-    textAlign: 'center',
-    paddingHorizontal: 50,
     paddingVertical: 20,
-    opacity: 1,
   },
   highlight: {
     color: '#E31E25',

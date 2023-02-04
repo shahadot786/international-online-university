@@ -5,6 +5,7 @@ import Hero from '../../components/util/Hero';
 import SingleInput from '../../components/textInput/SingleInput';
 import GetStartedBtn from '../../components/button/GetStartedBtn';
 import CourseList from '../../components/list/CourseList';
+import TrendingCourse from '../../components/section/TrendingCourse';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <SingleInput />
       <GetStartedBtn>Get Started</GetStartedBtn>
       <CourseList />
+      <TrendingCourse />
     </ScrollView>
   );
 };

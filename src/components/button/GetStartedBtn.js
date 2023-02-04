@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
   },
   btnText: {
     color: 'white',
-    fontSize: 14,
+    fontSize: 15,
     opacity: 1,
+    fontWeight: 'bold',
   },
 });
