@@ -6,6 +6,8 @@ import SingleInput from '../../components/textInput/SingleInput';
 import GetStartedBtn from '../../components/button/GetStartedBtn';
 import CourseList from '../../components/list/CourseList';
 import TrendingCourse from '../../components/section/TrendingCourse';
+import Promotion from '../../components/section/Promotion';
+import Explore from '../../components/section/Explore';
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       <GetStartedBtn>Get Started</GetStartedBtn>
       <CourseList />
       <TrendingCourse />
+      <Promotion />
+      <Explore />
     </ScrollView>
   );
 };

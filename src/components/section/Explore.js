@@ -2,38 +2,42 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
+import Tab from '../flatlist/Tab';
 import Slider from '../flatlist/Slider';
 
-const TrendingCourse = () => {
+const Explore = () => {
   return (
     <View style={styles.container}>
       {/* heading */}
       <View>
-        <Heading color={'#D9001B'} size={18}>
-          Explore Our Best Trending Course
+        <Heading color={'#001514'} size={22}>
+          Explore IOU
         </Heading>
-        <SubHeading color={'#001514'} size={16}>
+        <SubHeading color={'#001514'} size={18}>
           Sub Title Goes Here
         </SubHeading>
       </View>
+      {/* button list */}
+      <View style={styles.tabList}>
+        <Tab />
+      </View>
       {/* slider */}
-      <View style={styles.slider}>
+      <View>
         <Slider />
       </View>
     </View>
   );
 };
 
-export default TrendingCourse;
+export default Explore;
 
 const styles = StyleSheet.create({
   container: {
     paddingVertical: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
-    flex:1
+    flex: 1,
   },
-  slider: {
-    marginTop: 20,
+  tabList: {
+    marginVertical: 40,
+    marginHorizontal: 25,
   },
 });

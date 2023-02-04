@@ -34,7 +34,7 @@ const Slider = () => {
   }).current;
 
   return (
-    <View style={styles.container}>
+    <View>
       <View>
         <FlatList
           key={data}
@@ -65,6 +65,6 @@ const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
     justifyContent: 'center',
-    bottom:-70
+    bottom: -70,
   },
 });
