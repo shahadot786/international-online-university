@@ -1,11 +1,23 @@
 package com.internationalonlineuniversity;
 
+//for screenshot & record
+import android.os.Bundle;
+import android.view.WindowManager;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 
 public class MainActivity extends ReactActivity {
+
+  //add screenshot prevent method
+  @Override
+  protected void onCreate(Bundle savedInstanceState){
+    super.onCreate(savedInstanceState);
+    getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+  }
+//getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule

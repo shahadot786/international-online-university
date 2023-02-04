@@ -1,12 +1,27 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import {ScrollView, StyleSheet} from 'react-native';
+import React from 'react';
+import Header from '../../components/util/Header';
+import Hero from '../../components/util/Hero';
+import SingleInput from '../../components/textInput/SingleInput';
+import GetStartedBtn from '../../components/button/GetStartedBtn';
+import CourseList from '../../components/list/CourseList';
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  )
-}
+    <ScrollView style={styles.container}>
+      <Header />
+      <Hero />
+      <SingleInput />
+      <GetStartedBtn>Get Started</GetStartedBtn>
+      <CourseList />
+    </ScrollView>
+  );
+};
 
-export default Home
+export default Home;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
