@@ -14,13 +14,14 @@ import CourseSlider2 from '../../components/section/CourseSlider2';
 import Review from '../../components/section/Review';
 import LearnMore from '../../components/section/LearnMore';
 import Faq from '../../components/section/Faq';
+import Newsletter from '../../components/section/Newsletter';
 
 const Home = () => {
   return (
     <ScrollView style={styles.container}>
       <Header />
       <Hero />
-      <SingleInput />
+      <SingleInput borderColor={'#E31F26'} />
       <GetStartedBtn>Get Started</GetStartedBtn>
       <CourseList />
       <TrendingCourse />
@@ -32,6 +33,7 @@ const Home = () => {
       <Review />
       <LearnMore />
       <Faq />
+      <Newsletter />
     </ScrollView>
   );
 };

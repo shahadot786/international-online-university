@@ -61,7 +61,7 @@ const Accordion = () => {
             animationDuration={400}
             isOpen={item.id == 0 ? true : false}
             containerStyle={styles.accContainer}
-            // onPress={isOpen => console.log(item.id)}
+            // onPress={isOpen => console.log(isOpen)}
           />
         ))}
       </ScrollView>
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F8F8F8',
     borderTopColor: '#D6D6D6',
     borderTopWidth: 1,
-    borderRadius:0,
+    borderRadius: 0,
     marginHorizontal: 10,
   },
 });

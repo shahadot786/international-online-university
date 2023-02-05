@@ -7,7 +7,7 @@ const GetStartedBtn = ({children}) => {
       <Pressable
         style={({pressed}) => [
           {
-            backgroundColor: pressed ? '#2D2D2D' : '#E31E25',
+            backgroundColor: pressed ? '#2D2D2D' : '#D9001B',
           },
           styles.button,
         ]}>
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
     paddingVertical: 20,
   },
   button: {
