@@ -1,13 +1,19 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, Pressable} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const ExploreBtn = ({children}) => {
   return (
-    <TouchableOpacity style={styles.button} activeOpacity={0.8}>
+    <Pressable
+      style={({pressed}) => [
+        {
+          backgroundColor: pressed ? '#2D2D2D' : '#E31F26',
+        },
+        styles.button,
+      ]}>
       <Text style={styles.buttonText}>{children}</Text>
       <Icon name="long-arrow-right" size={18} color="white" />
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 
@@ -18,7 +24,6 @@ const styles = StyleSheet.create({
     width: 170,
     height: 43,
     borderRadius: 13,
-    backgroundColor: '#E31F26',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',

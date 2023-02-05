@@ -1,11 +1,17 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, Pressable} from 'react-native';
 import React from 'react';
 
 const SignUpBtn = ({children}) => {
   return (
-    <TouchableOpacity style={styles.button} activeOpacity={0.8}>
+    <Pressable
+      style={({pressed}) => [
+        {
+          backgroundColor: pressed ? '#E31F26' : '#313131',
+        },
+        styles.button,
+      ]}>
       <Text style={styles.text}>{children}</Text>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 
@@ -13,7 +19,6 @@ export default SignUpBtn;
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: '#313131',
     width: 276,
     height: 60,
     justifyContent: 'center',

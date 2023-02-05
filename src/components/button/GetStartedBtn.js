@@ -1,12 +1,18 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Pressable} from 'react-native';
 import React from 'react';
 
 const GetStartedBtn = ({children}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button} activeOpacity={0.8}>
+      <Pressable
+        style={({pressed}) => [
+          {
+            backgroundColor: pressed ? '#2D2D2D' : '#E31E25',
+          },
+          styles.button,
+        ]}>
         <Text style={styles.btnText}>{children}</Text>
-      </TouchableOpacity>
+      </Pressable>
     </View>
   );
 };
@@ -23,7 +29,6 @@ const styles = StyleSheet.create({
   button: {
     width: 320,
     height: 40,
-    backgroundColor: '#E31E25',
     borderRadius: 6,
     opacity: 1,
     justifyContent: 'center',
