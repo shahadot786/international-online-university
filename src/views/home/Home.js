@@ -8,6 +8,7 @@ import CourseList from '../../components/list/CourseList';
 import TrendingCourse from '../../components/section/TrendingCourse';
 import Promotion from '../../components/section/Promotion';
 import Explore from '../../components/section/Explore';
+import Videos from '../../components/section/Videos';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <TrendingCourse />
       <Promotion />
       <Explore />
+      <Videos />
     </ScrollView>
   );
 };

@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
   },
   subHeading: {
     paddingVertical: 20,
+    paddingHorizontal:20
   },
   highlight: {
     color: '#E31E25',
