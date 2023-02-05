@@ -13,6 +13,7 @@ import Pathway from '../../components/section/Pathway';
 import CourseSlider2 from '../../components/section/CourseSlider2';
 import Review from '../../components/section/Review';
 import LearnMore from '../../components/section/LearnMore';
+import Faq from '../../components/section/Faq';
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
       <CourseSlider2 />
       <Review />
       <LearnMore />
+      <Faq />
     </ScrollView>
   );
 };

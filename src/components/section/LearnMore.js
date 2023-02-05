@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     marginTop: 80,
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 40,
   },
   headContent: {
     paddingVertical: 40,
@@ -79,8 +80,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginHorizontal: 30,
   },
-  button:{
-    alignItems:'center',
-    marginTop:25
-  }
+  button: {
+    alignItems: 'center',
+    marginTop: 25,
+  },
 });
