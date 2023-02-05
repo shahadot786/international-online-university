@@ -10,6 +10,7 @@ import Promotion from '../../components/section/Promotion';
 import Explore from '../../components/section/Explore';
 import Videos from '../../components/section/Videos';
 import Pathway from '../../components/section/Pathway';
+import CourseSlider from '../../components/section/CourseSlider';
 
 const Home = () => {
   return (

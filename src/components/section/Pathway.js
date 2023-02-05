@@ -4,6 +4,7 @@ import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import PathwayList from '../list/PathwayList';
 import ExploreBtn from '../button/ExploreBtn';
+import CourseSlider from './CourseSlider';
 
 const width = Dimensions.get('screen');
 
@@ -31,6 +32,7 @@ const Pathway = () => {
       <View style={styles.button}>
         <ExploreBtn>Explore Your Future</ExploreBtn>
       </View>
+        <CourseSlider />
     </View>
   );
 };
@@ -39,9 +41,9 @@ export default Pathway;
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 40,
     backgroundColor: '#FFFFFF',
     flex: 1,
+    paddingTop: 55,
   },
   center: {
     justifyContent: 'center',
@@ -62,8 +64,9 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 10,
     resizeMode: 'cover',
   },
-  button:{
-    marginLeft:40,
-    marginVertical:40
-  }
+  button: {
+    marginLeft: 40,
+    marginVertical: 40,
+  },
+  
 });
