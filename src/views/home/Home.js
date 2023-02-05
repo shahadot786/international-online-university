@@ -10,7 +10,9 @@ import Promotion from '../../components/section/Promotion';
 import Explore from '../../components/section/Explore';
 import Videos from '../../components/section/Videos';
 import Pathway from '../../components/section/Pathway';
-import CourseSlider from '../../components/section/CourseSlider';
+import CourseSlider2 from '../../components/section/CourseSlider2';
+import Review from '../../components/section/Review';
+import LearnMore from '../../components/section/LearnMore';
 
 const Home = () => {
   return (
@@ -25,6 +27,9 @@ const Home = () => {
       <Explore />
       <Videos />
       <Pathway />
+      <CourseSlider2 />
+      <Review />
+      <LearnMore />
     </ScrollView>
   );
 };

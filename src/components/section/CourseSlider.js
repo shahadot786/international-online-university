@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   slider: {
-    paddingBottom: 100,
+    paddingBottom: 150,
   },
 });

@@ -17,5 +17,6 @@ const styles = StyleSheet.create({
   subHeading: {
     textAlign: 'center',
     marginTop: 5,
+    lineHeight:24
   },
 });
