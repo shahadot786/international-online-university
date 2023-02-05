@@ -9,6 +9,5 @@ export default COLORS = {
   darkGray: '#4d4c4c',
   yellow: '#FFA425',
   green: '#009245',
+  transparent: 'transparent',
 };
-
-
