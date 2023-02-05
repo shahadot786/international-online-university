@@ -1,5 +1,6 @@
 import {StyleSheet, Animated, View, Dimensions} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const {width} = Dimensions.get('screen');
 
@@ -44,9 +45,9 @@ const styles = StyleSheet.create({
     height: 14,
     borderRadius: 7,
     marginHorizontal: 2,
-    backgroundColor: '#9B9B9B',
+    backgroundColor: COLORS.gray,
   },
   dotActive: {
-    backgroundColor: '#F1112E',
+    backgroundColor: COLORS.primary,
   },
 });

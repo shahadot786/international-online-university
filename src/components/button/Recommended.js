@@ -1,5 +1,6 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const Recommended = () => {
   return (
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
   button: {
     width: 165,
     height: 65,
-    backgroundColor: '#E31E25',
+    backgroundColor: COLORS.primary,
     borderRadius: 12,
     alignItems: 'center',
     justifyContent: 'center',
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   btnText: {
-    color: '#ffffff',
+    color: 'white',
     fontSize: 14,
     fontWeight: 'bold',
   },

@@ -1,12 +1,13 @@
 import {StyleSheet, Text, Pressable} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const SignUpBtn = ({children}) => {
   return (
     <Pressable
       style={({pressed}) => [
         {
-          backgroundColor: pressed ? '#E31F26' : '#313131',
+          backgroundColor: pressed ? COLORS.primary : COLORS.black,
         },
         styles.button,
       ]}>
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
   text: {
-    color: '#FFF',
+    color: 'white',
     fontSize: 18,
   },
 });

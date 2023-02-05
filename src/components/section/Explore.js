@@ -4,16 +4,17 @@ import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import Tab from '../flatlist/Tab';
 import Slider from '../flatlist/Slider';
+import COLORS from '../../constants/index';
 
 const Explore = () => {
   return (
     <View style={styles.container}>
       {/* heading */}
       <View>
-        <Heading color={'#001514'} size={22}>
+        <Heading color={COLORS.black} size={22}>
           Explore IOU
         </Heading>
-        <SubHeading color={'#001514'} size={18}>
+        <SubHeading color={COLORS.black} size={18}>
           Sub Title Goes Here
         </SubHeading>
       </View>

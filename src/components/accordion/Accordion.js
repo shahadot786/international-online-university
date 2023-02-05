@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import React, {useEffect} from 'react';
 import {AccordionItem} from 'react-native-accordion-list-view';
+import COLORS from '../../constants/index';
 
 const Accordion = () => {
   const data = [
@@ -76,20 +77,20 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   title: {
-    color: '#001514',
+    color: COLORS.black,
     fontSize: 14,
     fontWeight: '600',
   },
   body: {
-    color: '#001514',
+    color: COLORS.black,
     fontSize: 12,
     marginHorizontal: 40,
     marginTop: 10,
     lineHeight: 16,
   },
   accContainer: {
-    backgroundColor: '#F8F8F8',
-    borderTopColor: '#D6D6D6',
+    backgroundColor: COLORS.light,
+    borderTopColor: COLORS.secondary,
     borderTopWidth: 1,
     borderRadius: 0,
     marginHorizontal: 10,

@@ -1,7 +1,8 @@
-import {StyleSheet, View, FlatList} from 'react-native';
+import {View, FlatList} from 'react-native';
 import React, {useState} from 'react';
 import TabBtn from '../button/TabBtn';
 import Recommended from '../button/Recommended';
+import COLORS from '../../constants/index';
 
 const Tab = () => {
   const data = [
@@ -48,8 +49,9 @@ const Tab = () => {
   const [selectedId, setSelectedId] = useState();
 
   const renderItem = ({item}) => {
-    const backgroundColor = item.id === selectedId ? '#E31E25' : '#EFEAEA';
-    const color = item.id === selectedId ? 'white' : '#9D9D9D';
+    const backgroundColor =
+      item.id === selectedId ? COLORS.primary : COLORS.light;
+    const color = item.id === selectedId ? 'white' : COLORS.gray;
     return item.id == 1 ? (
       <Recommended />
     ) : (
@@ -77,5 +79,3 @@ const Tab = () => {
 };
 
 export default Tab;
-
-const styles = StyleSheet.create({});

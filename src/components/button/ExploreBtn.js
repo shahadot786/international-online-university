@@ -1,13 +1,14 @@
 import {StyleSheet, Text, Pressable} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import COLORS from '../../constants/index';
 
 const ExploreBtn = ({children}) => {
   return (
     <Pressable
       style={({pressed}) => [
         {
-          backgroundColor: pressed ? '#2D2D2D' : '#E31F26',
+          backgroundColor: pressed ? COLORS.black : COLORS.primary,
         },
         styles.button,
       ]}>
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   buttonText: {
-    color: '#FFF',
+    color: 'white',
     fontSize: 14,
     fontWeight: 'bold',
   },

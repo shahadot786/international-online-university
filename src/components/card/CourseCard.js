@@ -9,6 +9,7 @@ import {
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
+import COLORS from '../../constants/index';
 
 const CourseCard = () => {
   return (
@@ -21,13 +22,13 @@ const CourseCard = () => {
             source={require('../../../assets/card.jpg')}
           />
           <View style={styles.courseView}>
-            <Icon name="layers-outline" size={24} color="#fff" />
+            <Icon name="layers-outline" size={24} color="white" />
             <Text style={styles.courseText}>7 Courses</Text>
           </View>
         </View>
         {/* text-1 */}
         <View style={styles.text1View}>
-          <Icon name="ribbon-outline" size={34} color="#DE1D24" />
+          <Icon name="ribbon-outline" size={34} color={COLORS.primary} />
           <Text style={styles.text1}>Daffodil International University</Text>
         </View>
         {/* heading */}
@@ -42,11 +43,11 @@ const CourseCard = () => {
         </View>
         {/* footer */}
         <View style={styles.footer}>
-          <Icon name="star" size={20} color="#FCB900" />
+          <Icon name="star" size={20} color={COLORS.yellow} />
           <Text style={styles.footerText}>4.8 (1.2k)</Text>
-          <Icon name="people-outline" size={20} color="#313131" />
+          <Icon name="people-outline" size={20} color={COLORS.black} />
           <Text style={styles.footerText}>2.78k</Text>
-          <Icon name="time-outline" size={20} color="#313131" />
+          <Icon name="time-outline" size={20} color={COLORS.black} />
           <Text style={styles.footerText}>58 hours</Text>
         </View>
       </View>
@@ -58,7 +59,7 @@ export default CourseCard;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'white',
     borderRadius: 6,
     elevation: 4,
     paddingBottom: 20,
@@ -81,14 +82,14 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     right: 15,
-    backgroundColor: '#DE1D24',
+    backgroundColor: COLORS.primary,
     paddingHorizontal: 10,
     paddingVertical: 6,
     borderRadius: 8,
     flexDirection: 'row',
   },
   courseText: {
-    color: '#FFFFFF',
+    color: 'white',
     fontWeight: 'bold',
     fontSize: 13,
     marginLeft: 10,
@@ -102,19 +103,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text1: {
-    color: '#001514',
+    color: COLORS.black,
     fontSize: 12,
     fontWeight: 'bold',
     marginLeft: 5,
   },
   heading: {
-    color: '#313131',
+    color: COLORS.black,
     fontSize: 18,
     fontWeight: 'bold',
     marginHorizontal: 20,
   },
   text2: {
-    color: '#313131',
+    color: COLORS.black,
     fontSize: 14,
     marginHorizontal: 20,
     marginVertical: 10,
@@ -127,7 +128,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   footerText: {
-    color: '#313131',
+    color: COLORS.black,
     fontSize: 14,
   },
 });

@@ -1,5 +1,6 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const Recommended2 = () => {
   return (
@@ -21,12 +22,12 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     elevation: 0,
     borderBottomWidth: 2,
-    borderBottomColor: '#E31E25',
+    borderBottomColor: COLORS.primary,
     paddingHorizontal: 10,
   },
   btnText: {
     fontWeight: 'bold',
     fontSize: 16,
-    color: '#E31E25',
+    color: COLORS.primary,
   },
 });

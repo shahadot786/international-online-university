@@ -1,18 +1,19 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import Slider from '../flatlist/Slider';
+import COLORS from '../../constants/index';
 
 const TrendingCourse = () => {
   return (
     <View style={styles.container}>
       {/* heading */}
       <View>
-        <Heading color={'#D9001B'} size={18}>
+        <Heading color={COLORS.primary} size={18}>
           Explore Our Best Trending Course
         </Heading>
-        <SubHeading color={'#001514'} size={16}>
+        <SubHeading color={COLORS.black} size={16}>
           Sub Title Goes Here
         </SubHeading>
       </View>
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     paddingVertical: 100,
     justifyContent: 'center',
     alignItems: 'center',
-    flex:1
+    flex: 1,
   },
   slider: {
     marginTop: 20,

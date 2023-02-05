@@ -1,5 +1,6 @@
 import {View, Image, StyleSheet} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const Header = () => {
   return (
@@ -20,9 +21,9 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f8f8',
+    backgroundColor: COLORS.light,
     height: 80,
-    borderBottomColor: '#e0e0e0',
+    borderBottomColor: COLORS.secondary,
     borderBottomWidth: 1,
     paddingBottom: 20,
   },

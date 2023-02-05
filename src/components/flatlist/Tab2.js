@@ -1,7 +1,8 @@
-import {StyleSheet, View, FlatList} from 'react-native';
+import {View, FlatList} from 'react-native';
 import React, {useState} from 'react';
 import TabBtn2 from '../button/TabBtn2';
 import Recommended2 from '../button/Recommended2';
+import COLORS from '../../constants/index';
 
 const Tab2 = () => {
   const data = [
@@ -41,8 +42,8 @@ const Tab2 = () => {
   const [selectedId, setSelectedId] = useState();
 
   const renderItem = ({item}) => {
-    const borderBottomColor = item.id === selectedId ? '#E31E25' : '#fff';
-    const color = item.id === selectedId ? '#E31E25' : '#8B8B8B';
+    const borderBottomColor = item.id === selectedId ? COLORS.primary : 'white';
+    const color = item.id === selectedId ? COLORS.primary : COLORS.gray;
     return item.id == 1 ? (
       <Recommended2 />
     ) : (
@@ -70,4 +71,3 @@ const Tab2 = () => {
 };
 
 export default Tab2;
-const styles = StyleSheet.create({});

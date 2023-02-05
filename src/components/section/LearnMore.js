@@ -3,6 +3,7 @@ import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import ExploreBtn from '../button/ExploreBtn';
+import COLORS from '../../constants/index';
 
 const width = Dimensions.get('screen');
 const LearnMore = () => {
@@ -10,12 +11,12 @@ const LearnMore = () => {
     <View style={styles.container}>
       <View style={[styles.headContent, {width: width.width / 1.2}]}>
         <View style={styles.heading}>
-          <Heading color={'#FFFFFF'} size={24}>
+          <Heading color={COLORS.white} size={24}>
             Iou for Business, team and university
           </Heading>
         </View>
         <View style={styles.subHeading}>
-          <SubHeading color={'#FFFFFF'} size={18}>
+          <SubHeading color={COLORS.white} size={18}>
             We’ve got the solution: world- class training and development
             programs, enveloped by top universities and companies. All on
             Coursers for Business.
@@ -24,12 +25,12 @@ const LearnMore = () => {
       </View>
       <View style={[styles.headContent2, {width: width.width / 1.2}]}>
         <View style={styles.heading2}>
-          <Heading color={'#001514'} size={24}>
+          <Heading color={COLORS.black} size={24}>
             Made to Meet All Your Learning Needs
           </Heading>
         </View>
         <View style={styles.subHeading2}>
-          <SubHeading color={'#001514'} size={18}>
+          <SubHeading color={COLORS.black} size={18}>
             We’ve got the solution: world- class training and development
             programs, enveloped by top universities and companies. All on
             Coursers for Business.
@@ -54,17 +55,17 @@ const styles = StyleSheet.create({
   },
   headContent: {
     paddingVertical: 40,
-    backgroundColor: '#D9001B',
+    backgroundColor: COLORS.primary,
     borderRadius: 20,
     marginBottom: 25,
   },
   headContent2: {
     paddingVertical: 40,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLORS.white,
     borderRadius: 20,
     marginBottom: 25,
     borderWidth: 1,
-    borderColor: '#D5D5D5',
+    borderColor: COLORS.secondary,
   },
   heading: {
     marginHorizontal: 45,

@@ -1,5 +1,6 @@
 import {StyleSheet, Text, View, Pressable} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const GetStartedBtn = ({children}) => {
   return (
@@ -7,7 +8,7 @@ const GetStartedBtn = ({children}) => {
       <Pressable
         style={({pressed}) => [
           {
-            backgroundColor: pressed ? '#2D2D2D' : '#D9001B',
+            backgroundColor: pressed ? COLORS.black : COLORS.primary,
           },
           styles.button,
         ]}>

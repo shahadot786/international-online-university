@@ -3,6 +3,7 @@ import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import Slider from '../flatlist/Slider';
+import COLORS from '../../constants/index';
 
 const CourseSlider2 = () => {
   return (
@@ -13,12 +14,12 @@ const CourseSlider2 = () => {
         resizeMode="cover">
         <View style={styles.overly}>
           <View style={styles.heading}>
-            <Heading color={'#FFFFFF'} size={20}>
+            <Heading color={COLORS.white} size={20}>
               Master's and Bachelor's Degrees
             </Heading>
           </View>
           <View style={styles.subHeading}>
-            <SubHeading color={'#FFFFFF'} size={14}>
+            <SubHeading color={COLORS.white} size={14}>
               Find a top degree that fits your life Breakthrough pricing on 100%
               online degrees from top universities.
             </SubHeading>
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   overly: {
     height: '100%',
-    backgroundColor: '#201a1ab2',
+    backgroundColor: COLORS.black,
   },
   image: {
     width: '100%',
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 10,
-    marginHorizontal:60,
-    marginBottom:25
+    marginHorizontal: 60,
+    marginBottom: 25,
   },
 });

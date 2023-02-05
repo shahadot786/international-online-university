@@ -1,5 +1,6 @@
 import {StyleSheet, Text, View, TextInput} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const SingleInput = ({borderColor, color, backgroundColor, textAlign}) => {
   return (
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
     opacity: 1,
   },
   error: {
-    color: '#E31F26',
+    color: COLORS.primary,
     textAlign: 'left',
     marginBottom: 10,
   },

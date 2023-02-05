@@ -1,5 +1,6 @@
 import {StyleSheet, Image, View} from 'react-native';
 import React from 'react';
+import COLORS from '../../constants/index';
 
 const Promotion = () => {
   return (
@@ -17,7 +18,7 @@ export default Promotion;
 const styles = StyleSheet.create({
   imageView: {
     width: '100%',
-    backgroundColor: '#FFF',
+    backgroundColor: COLORS.white,
     paddingVertical: 20,
   },
   image: {

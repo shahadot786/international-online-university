@@ -4,6 +4,7 @@ import PlayBtn from '../button/PlayBtn';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import SignUpBtn from '../button/SignUpBtn';
+import COLORS from '../../constants/index';
 
 const Videos = () => {
   return (
@@ -20,11 +21,11 @@ const Videos = () => {
       </View>
       {/* content */}
       <View style={styles.contentView}>
-        <Heading color={'#FFFFFF'} size={24}>
+        <Heading color={COLORS.white} size={24}>
           Start your journey today.
         </Heading>
         <View style={styles.subHeading}>
-          <SubHeading color={'#FFFFFF'} size={16}>
+          <SubHeading color={COLORS.white} size={16}>
             Join iou and explore 500+ courses Choose from 3 plans. Starting at
             $15/month.
           </SubHeading>
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
     bottom: '60%',
   },
   contentView: {
-    backgroundColor: '#D9001B',
+    backgroundColor: COLORS.primary,
     height: 220,
     width: '100%',
     justifyContent: 'center',

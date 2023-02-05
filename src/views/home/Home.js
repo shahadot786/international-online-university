@@ -15,13 +15,14 @@ import Review from '../../components/section/Review';
 import LearnMore from '../../components/section/LearnMore';
 import Faq from '../../components/section/Faq';
 import Newsletter from '../../components/section/Newsletter';
+import COLORS from '../../constants/index';
 
 const Home = () => {
   return (
     <ScrollView style={styles.container}>
       <Header />
       <Hero />
-      <SingleInput borderColor={'#E31F26'} />
+      <SingleInput borderColor={COLORS.primary} />
       <GetStartedBtn>Get Started</GetStartedBtn>
       <CourseList />
       <TrendingCourse />

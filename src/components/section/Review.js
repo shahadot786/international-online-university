@@ -1,18 +1,18 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
-import Slider from '../flatlist/Slider';
 import ReviewSlider from '../flatlist/ReviewSlider';
+import COLORS from '../../constants/index';
 
 const Review = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Heading color={'#001514'} size={20}>
+        <Heading color={COLORS.black} size={20}>
           See what our members are saying.
         </Heading>
-        <SubHeading color={'#001514'} size={16}>
+        <SubHeading color={COLORS.black} size={16}>
           Sub Title Goes Here
         </SubHeading>
       </View>
@@ -28,7 +28,7 @@ export default Review;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLORS.white,
     paddingVertical: 25,
   },
 });

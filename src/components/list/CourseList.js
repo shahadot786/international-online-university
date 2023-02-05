@@ -1,6 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import ListCard from '../card/ListCard';
+import COLORS from '../../constants/index';
 
 const IMAGE1 = require('../../../assets/lecture.png');
 const IMAGE2 = require('../../../assets/mortarboard.png');
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
     paddingTop: 40,
   },
   itemView: {
-    backgroundColor: '#E31E25',
+    backgroundColor: COLORS.primary,
     width: '100%',
     paddingVertical: 40,
     justifyContent: 'flex-start',
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 6,
     marginBottom: 10,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLORS.white,
     marginTop: 10,
   },
   image: {
@@ -61,11 +62,11 @@ const styles = StyleSheet.create({
   contentView: {
     width: 250,
     borderBottomWidth: 2,
-    borderColor: '#4D1E1F48',
+    borderColor: COLORS.black,
     flexDirection: 'row',
   },
   heading: {
-    color: '#FFFFFF',
+    color: COLORS.white,
     fontSize: 26,
     fontWeight: 'bold',
     marginLeft: 25,
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
   },
   subHeading: {
     fontSize: 14,
-    color: '#FFFFFF',
+    color: COLORS.white,
     marginLeft: 25,
   },
 });

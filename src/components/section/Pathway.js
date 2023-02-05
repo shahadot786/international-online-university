@@ -5,6 +5,7 @@ import SubHeading from '../text/SubHeading';
 import PathwayList from '../list/PathwayList';
 import ExploreBtn from '../button/ExploreBtn';
 import CourseSlider from './CourseSlider';
+import COLORS from '../../constants/index';
 
 const width = Dimensions.get('screen');
 
@@ -12,10 +13,10 @@ const Pathway = () => {
   return (
     <View style={styles.container}>
       <View style={styles.center}>
-        <Heading color={'#001514'} size={24}>
+        <Heading color={COLORS.black} size={24}>
           IOU Career Pathway
         </Heading>
-        <SubHeading color={'#001514'} size={18}>
+        <SubHeading color={COLORS.black} size={18}>
           A bundle of course to become the master
         </SubHeading>
       </View>
@@ -32,7 +33,7 @@ const Pathway = () => {
       <View style={styles.button}>
         <ExploreBtn>Explore Your Future</ExploreBtn>
       </View>
-        <CourseSlider />
+      <CourseSlider />
     </View>
   );
 };
@@ -41,7 +42,7 @@ export default Pathway;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: COLORS.white,
     flex: 1,
     paddingTop: 55,
   },
@@ -68,5 +69,4 @@ const styles = StyleSheet.create({
     marginLeft: 40,
     marginVertical: 40,
   },
-  
 });
