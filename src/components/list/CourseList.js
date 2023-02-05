@@ -2,29 +2,26 @@ import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import ListCard from '../card/ListCard';
 import COLORS from '../../constants/index';
-
-const IMAGE1 = require('../../../assets/lecture.png');
-const IMAGE2 = require('../../../assets/mortarboard.png');
-const IMAGE3 = require('../../../assets/online-course.png');
+import IMAGES from '../../constants/Images';
 
 const CourseList = () => {
   return (
     <View style={styles.container}>
       <View style={styles.itemView}>
         <ListCard
-          image={IMAGE3}
+          image={IMAGES.onlineCourse}
           heading={'692'}
           subHeading={'Online Course'}
           border={2}
         />
         <ListCard
-          image={IMAGE2}
+          image={IMAGES.mortarboard}
           heading={'20'}
           subHeading={'University Affiliation'}
           border={2}
         />
         <ListCard
-          image={IMAGE1}
+          image={IMAGES.lecture}
           heading={'360'}
           subHeading={'Professional Mentors'}
           border={0}

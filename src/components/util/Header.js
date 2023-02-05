@@ -1,6 +1,7 @@
 import {View, Image, StyleSheet} from 'react-native';
 import React from 'react';
 import COLORS from '../../constants/index';
+import IMAGES from '../../constants/Images';
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <View>
         <Image
           style={styles.image}
-          source={require('../../../assets/diu-logo.png')}
+          source={IMAGES.logo}
         />
       </View>
     </View>

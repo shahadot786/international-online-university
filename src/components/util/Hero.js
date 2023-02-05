@@ -3,14 +3,12 @@ import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import COLORS from '../../constants/index';
+import IMAGES from '../../constants/Images';
 
 const Hero = () => {
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.image}
-        source={require('../../../assets/hero-logo.png')}
-      />
+      <Image style={styles.image} source={IMAGES.hero} />
       <View style={styles.heading}>
         <Heading color={COLORS.black} size={26}>
           Let's learn from the experts!

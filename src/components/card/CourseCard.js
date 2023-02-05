@@ -10,6 +10,7 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
 import COLORS from '../../constants/index';
+import IMAGES from '../../constants/Images';
 
 const CourseCard = () => {
   return (
@@ -17,10 +18,7 @@ const CourseCard = () => {
       <View style={[styles.container, {width: screenWidth.width - 60}]}>
         {/* image */}
         <View style={styles.imageView}>
-          <Image
-            style={styles.image}
-            source={require('../../../assets/card.jpg')}
-          />
+          <Image style={styles.image} source={IMAGES.card} />
           <View style={styles.courseView}>
             <Icon name="layers-outline" size={24} color="white" />
             <Text style={styles.courseText}>7 Courses</Text>

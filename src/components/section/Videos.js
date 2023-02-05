@@ -5,6 +5,7 @@ import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import SignUpBtn from '../button/SignUpBtn';
 import COLORS from '../../constants/index';
+import IMAGES from '../../constants/Images';
 
 const Videos = () => {
   return (
@@ -13,7 +14,7 @@ const Videos = () => {
       <View style={styles.imageView}>
         <Image
           style={styles.image}
-          source={require('../../../assets/teaching.png')}
+          source={IMAGES.teaching}
         />
         <View style={styles.playBtn}>
           <PlayBtn />

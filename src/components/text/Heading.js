@@ -1,5 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Fonts from '../../constants/Fonts';
 
 const Heading = ({children, color, size}) => {
   return (
@@ -15,7 +16,7 @@ export default Heading;
 
 const styles = StyleSheet.create({
   heading: {
-    fontWeight: 'bold',
     textAlign: 'center',
+    fontFamily: Fonts.InterBold,
   },
 });

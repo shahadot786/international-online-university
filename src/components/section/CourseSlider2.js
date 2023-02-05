@@ -4,13 +4,14 @@ import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import Slider from '../flatlist/Slider';
 import COLORS from '../../constants/index';
+import IMAGES from '../../constants/Images';
 
 const CourseSlider2 = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
         style={styles.image}
-        source={require('../../../assets/success.jpg')}
+        source={IMAGES.success}
         resizeMode="cover">
         <View style={styles.overly}>
           <View style={styles.heading}>

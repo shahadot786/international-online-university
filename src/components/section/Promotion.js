@@ -1,13 +1,14 @@
 import {StyleSheet, Image, View} from 'react-native';
 import React from 'react';
 import COLORS from '../../constants/index';
+import IMAGES from '../../constants/Images';
 
 const Promotion = () => {
   return (
     <View style={styles.imageView}>
       <Image
         style={styles.image}
-        source={require('../../../assets/promotion.png')}
+        source={IMAGES.promotion}
       />
     </View>
   );

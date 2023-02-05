@@ -1,3 +1,4 @@
+// colors
 export default COLORS = {
   primary: '#E31F26',
   black: '#001514',
@@ -9,3 +10,5 @@ export default COLORS = {
   yellow: '#FFA425',
   green: '#009245',
 };
+
+

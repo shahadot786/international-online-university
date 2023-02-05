@@ -2,8 +2,9 @@ import {StyleSheet, FlatList, View, Animated} from 'react-native';
 import React, {useState, useRef} from 'react';
 import ReviewCard from '../card/ReviewCard';
 import DotPagination from '../pagination/DotPagination';
+import IMAGES from '../../constants/Images';
 
-const avatar = require('../../../assets/avatar.png');
+const avatar = IMAGES.avatar;
 
 const ReviewSlider = () => {
   const data = [
