@@ -15,7 +15,7 @@ import Review from '../../components/section/Review';
 import LearnMore from '../../components/section/LearnMore';
 import Faq from '../../components/section/Faq';
 import Newsletter from '../../components/section/Newsletter';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const Home = () => {
   return (

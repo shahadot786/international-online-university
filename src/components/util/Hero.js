@@ -2,7 +2,7 @@ import {StyleSheet, Image, View, Text} from 'react-native';
 import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import IMAGES from '../../constants/Images';
 
 const Hero = () => {

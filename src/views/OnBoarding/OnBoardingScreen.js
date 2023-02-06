@@ -2,7 +2,7 @@ import {StyleSheet, View, Image, Text, Pressable} from 'react-native';
 import React from 'react';
 import Onboarding from 'react-native-onboarding-swiper';
 import Images from '../../constants/Images';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 import {useNavigation} from '@react-navigation/native';
 

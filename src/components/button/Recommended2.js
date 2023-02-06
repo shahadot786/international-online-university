@@ -1,6 +1,6 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const Recommended2 = () => {
   return (

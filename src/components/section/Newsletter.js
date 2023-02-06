@@ -4,7 +4,7 @@ import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import SingleInput from '../textInput/SingleInput';
 import GetStartedBtn from '../button/GetStartedBtn';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const Newsletter = () => {
   return (

@@ -1,7 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import ListCard from '../card/ListCard';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import IMAGES from '../../constants/Images';
 
 const CourseList = () => {

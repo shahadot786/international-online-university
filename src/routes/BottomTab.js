@@ -7,7 +7,7 @@ import MyLearning from '../views/home/MyLearning';
 import Wishlist from '../views/home/Wishlist';
 import Account from '../views/home/Account';
 import Home from '../views/home/Home';
-import Colors from '../constants/index';
+import Colors from '../constants/Colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Fonts from '../constants/Fonts';
 

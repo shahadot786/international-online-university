@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../../components/util/Header';
 import Heading from '../../components/text/Heading';
 import SubHeading from '../../components/text/SubHeading';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import SingleInput from '../../components/textInput/SingleInput';
 import Fonts from '../../constants/Fonts';
 import GetStartedBtn from '../../components/button/GetStartedBtn';

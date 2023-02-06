@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const PathwayList = () => {
   return (

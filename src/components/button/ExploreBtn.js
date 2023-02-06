@@ -1,7 +1,7 @@
 import {StyleSheet, Text, Pressable} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const ExploreBtn = ({children}) => {
   return (

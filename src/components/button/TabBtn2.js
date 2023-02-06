@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const TabBtn2 = ({onPress, color, borderBottomColor, data}) => {
   return (

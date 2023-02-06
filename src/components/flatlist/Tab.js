@@ -2,7 +2,7 @@ import {View, FlatList} from 'react-native';
 import React, {useState} from 'react';
 import TabBtn from '../button/TabBtn';
 import Recommended from '../button/Recommended';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const Tab = () => {
   const data = [

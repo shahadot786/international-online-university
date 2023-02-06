@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, Image, Dimensions} from 'react-native';
 import React from 'react';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 const screenWidth = Dimensions.get('screen');
 
 const ListCard = ({image, heading, subHeading, border}) => {

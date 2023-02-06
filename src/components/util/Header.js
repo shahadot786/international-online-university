@@ -1,16 +1,13 @@
 import {View, Image, StyleSheet} from 'react-native';
 import React from 'react';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import IMAGES from '../../constants/Images';
 
 const Header = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Image
-          style={styles.image}
-          source={IMAGES.logo}
-        />
+        <Image style={styles.image} source={IMAGES.logo} />
       </View>
     </View>
   );

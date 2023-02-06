@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, Pressable, Dimensions} from 'react-native';
 import React from 'react';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const width = Dimensions.get('screen');
 

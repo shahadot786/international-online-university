@@ -4,7 +4,7 @@ import PlayBtn from '../button/PlayBtn';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import SignUpBtn from '../button/SignUpBtn';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import IMAGES from '../../constants/Images';
 
 const Videos = () => {
@@ -12,10 +12,7 @@ const Videos = () => {
     <View style={styles.container}>
       {/* image */}
       <View style={styles.imageView}>
-        <Image
-          style={styles.image}
-          source={IMAGES.teaching}
-        />
+        <Image style={styles.image} source={IMAGES.teaching} />
         <View style={styles.playBtn}>
           <PlayBtn />
         </View>

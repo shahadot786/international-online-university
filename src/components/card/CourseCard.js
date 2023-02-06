@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import IMAGES from '../../constants/Images';
 
 const CourseCard = () => {

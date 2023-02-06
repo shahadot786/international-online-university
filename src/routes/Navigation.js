@@ -6,7 +6,7 @@ import Welcome from '../views/auth/Welcome';
 import SignUp from '../views/auth/SignUp';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SignIn from '../views/auth/SignIn';
-import COLORS from '../constants/index';
+import COLORS from '../constants/Colors';
 import BottomTab from './BottomTab';
 const Stack = createNativeStackNavigator();
 

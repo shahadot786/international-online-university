@@ -1,7 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const PlayBtn = () => {
   return (

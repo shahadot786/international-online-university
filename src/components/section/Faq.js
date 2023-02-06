@@ -3,7 +3,7 @@ import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import Accordion from '../accordion/Accordion';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const Faq = () => {
   return (

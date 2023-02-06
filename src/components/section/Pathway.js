@@ -5,7 +5,7 @@ import SubHeading from '../text/SubHeading';
 import PathwayList from '../list/PathwayList';
 import ExploreBtn from '../button/ExploreBtn';
 import CourseSlider from './CourseSlider';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 import IMAGES from '../../constants/Images';
 
 const width = Dimensions.get('screen');
@@ -23,10 +23,7 @@ const Pathway = () => {
       </View>
       {/* Image */}
       <View style={[styles.imageView, {width: width.width - 80}]}>
-        <Image
-          style={styles.image}
-          source={IMAGES.pathway}
-        />
+        <Image style={styles.image} source={IMAGES.pathway} />
       </View>
       <View>
         <PathwayList />

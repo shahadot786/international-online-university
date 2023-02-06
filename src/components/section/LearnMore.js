@@ -3,7 +3,7 @@ import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import ExploreBtn from '../button/ExploreBtn';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const width = Dimensions.get('screen');
 const LearnMore = () => {

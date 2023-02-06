@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import React, {useEffect} from 'react';
 import {AccordionItem} from 'react-native-accordion-list-view';
-import COLORS from '../../constants/index';
+import COLORS from '../../constants/Colors';
 
 const Accordion = () => {
   const data = [
