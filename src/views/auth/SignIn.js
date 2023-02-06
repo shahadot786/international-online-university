@@ -1,12 +1,18 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import {View, Text, StyleSheet} from 'react-native';
+import React from 'react';
 
 const SignIn = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>SignIn</Text>
     </View>
-  )
-}
+  );
+};
 
-export default SignIn
+export default SignIn;
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: COLORS.light,
+    flex: 1,
+  },
+});

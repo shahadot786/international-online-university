@@ -19,7 +19,7 @@ import COLORS from '../../constants/index';
 
 const Home = () => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       <Header />
       <Hero />
       <SingleInput borderColor={COLORS.primary} />
@@ -44,5 +44,6 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginBottom: 65,
   },
 });

@@ -71,7 +71,7 @@ const OnBoardingScreen = () => {
   return (
     <View style={styles.container}>
       <Onboarding
-        onSkip={() => navigation.replace('Welcome')}
+        onSkip={() => navigation.replace('BottomTab')}
         onDone={() => navigation.replace('SignIn')}
         DotComponent={Dots}
         NextButtonComponent={Next}

@@ -7,6 +7,8 @@ import SignUp from '../views/auth/SignUp';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SignIn from '../views/auth/SignIn';
 import COLORS from '../constants/index';
+import Home from '../views/home/Home';
+import BottomTab from './BottomTab';
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
@@ -25,6 +27,10 @@ const Navigation = () => {
     setData();
   }, []);
   //end
+  //get the bottom tab
+  function BottomTabs() {
+    return <BottomTab />;
+  }
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -39,6 +45,11 @@ const Navigation = () => {
             options={{headerShown: false}}
           />
         )}
+        <Stack.Screen
+          name="BottomTab"
+          component={BottomTabs}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name="Welcome"
           component={Welcome}
