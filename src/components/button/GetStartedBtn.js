@@ -2,9 +2,9 @@ import {StyleSheet, Text, View, Pressable} from 'react-native';
 import React from 'react';
 import COLORS from '../../constants/index';
 
-const GetStartedBtn = ({children}) => {
+const GetStartedBtn = ({children, backgroundColor}) => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, {backgroundColor: backgroundColor}]}>
       <Pressable
         style={({pressed}) => [
           {
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent',
     paddingVertical: 20,
   },
   button: {

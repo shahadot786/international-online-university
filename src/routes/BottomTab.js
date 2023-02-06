@@ -26,7 +26,7 @@ const BottomTab = () => {
           paddingBottom: 6,
           backgroundColor: Colors.light,
           position: 'absolute',
-          borderTopWidth: 0,
+          borderTopWidth: 1,
         },
         tabBarActiveTintColor: Colors.primary,
         tabBarInactiveTintColor: Colors.black,

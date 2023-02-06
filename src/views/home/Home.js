@@ -22,8 +22,11 @@ const Home = () => {
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       <Header />
       <Hero />
-      <SingleInput borderColor={COLORS.primary} />
-      <GetStartedBtn>Get Started</GetStartedBtn>
+      <SingleInput
+        borderColor={COLORS.primary}
+        backgroundColor={COLORS.white}
+      />
+      <GetStartedBtn backgroundColor={COLORS.white}>Get Started</GetStartedBtn>
       <CourseList />
       <TrendingCourse />
       <Promotion />
