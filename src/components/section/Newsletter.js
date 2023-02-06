@@ -22,6 +22,7 @@ const Newsletter = () => {
       </View>
       <View style={styles.input}>
         <SingleInput
+          placeholder={'Your Email Address'}
           backgroundColor={COLORS.darkGray}
           borderColor={COLORS.secondary}
           color={COLORS.white}

@@ -1,6 +1,8 @@
-import {StyleSheet, Text, View, Pressable} from 'react-native';
+import {StyleSheet, Text, View, Pressable, Dimensions} from 'react-native';
 import React from 'react';
 import COLORS from '../../constants/index';
+
+const width = Dimensions.get('screen');
 
 const GetStartedBtn = ({children, backgroundColor}) => {
   return (
@@ -9,6 +11,7 @@ const GetStartedBtn = ({children, backgroundColor}) => {
         style={({pressed}) => [
           {
             backgroundColor: pressed ? COLORS.black : COLORS.primary,
+            width: width.width - 80,
           },
           styles.button,
         ]}>
@@ -27,8 +30,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   button: {
-    width: 320,
-    height: 40,
+    height: 48,
     borderRadius: 6,
     opacity: 1,
     justifyContent: 'center',

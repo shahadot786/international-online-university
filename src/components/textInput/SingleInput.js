@@ -1,20 +1,37 @@
-import {StyleSheet, Text, View, TextInput} from 'react-native';
+import {StyleSheet, Dimensions, View, TextInput} from 'react-native';
 import React from 'react';
 import COLORS from '../../constants/index';
 
-const SingleInput = ({borderColor, color, backgroundColor, textAlign}) => {
+const width = Dimensions.get('screen');
+
+const SingleInput = ({
+  borderColor,
+  color,
+  backgroundColor,
+  textAlign,
+  placeholder,
+  secureTextEntry,
+}) => {
   return (
-    <View style={[styles.container, {backgroundColor: backgroundColor}]}>
+    <View style={[styles.container]}>
       {/* <Text style={styles.error}>Valid Email Is Required.</Text> */}
       <TextInput
-        editable
-        style={[styles.input, {borderColor: borderColor, textAlign: textAlign}]}
-        placeholder="Your Email Address"
+        style={[
+          styles.input,
+          {
+            borderColor: borderColor,
+            textAlign: textAlign,
+            width: width.width - 80,
+            backgroundColor: backgroundColor,
+          },
+        ]}
+        placeholder={placeholder}
         autoCapitalize="none"
-        autoComplete="email"
-        keyboardType="email-address"
-        maxLength={50}
+        autoComplete="off"
+        keyboardType="default"
+        maxLength={72}
         placeholderTextColor={color}
+        secureTextEntry={secureTextEntry}
       />
     </View>
   );
@@ -29,8 +46,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
   },
   input: {
-    width: 320,
-    height: 40,
+    height: 48,
     borderRadius: 6,
     borderWidth: 1,
     paddingLeft: 15,

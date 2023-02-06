@@ -10,4 +10,5 @@ export default COLORS = {
   yellow: '#FFA425',
   green: '#009245',
   transparent: 'transparent',
+  blue: '#1976D2',
 };

@@ -25,6 +25,7 @@ const Home = () => {
       <SingleInput
         borderColor={COLORS.primary}
         backgroundColor={COLORS.white}
+        placeholder={'Your Email Address'}
       />
       <GetStartedBtn backgroundColor={COLORS.white}>Get Started</GetStartedBtn>
       <CourseList />

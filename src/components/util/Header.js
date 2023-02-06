@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
     height: 80,
     borderBottomColor: COLORS.secondary,
     borderBottomWidth: 1,
-    paddingBottom: 20,
   },
   image: {
     resizeMode: 'cover',

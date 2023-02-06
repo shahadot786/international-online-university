@@ -50,21 +50,27 @@ const OnBoardingScreen = () => {
   const Browse = ({...props}) => {
     return (
       <Pressable {...props}>
-        <Text style={styles.text}>Browse</Text>
+        {({pressed}) => (
+          <Text style={[pressed ? styles.text2 : styles.text]}>Browse</Text>
+        )}
       </Pressable>
     );
   };
   const Next = ({...props}) => {
     return (
       <Pressable {...props}>
-        <Text style={styles.text}>Next</Text>
+        {({pressed}) => (
+          <Text style={[pressed ? styles.text2 : styles.text]}>Next</Text>
+        )}
       </Pressable>
     );
   };
   const SignIn = ({...props}) => {
     return (
       <Pressable {...props}>
-        <Text style={styles.text}>Sign In</Text>
+        {({pressed}) => (
+          <Text style={[pressed ? styles.text2 : styles.text]}>Sign In</Text>
+        )}
       </Pressable>
     );
   };
@@ -106,6 +112,12 @@ const styles = StyleSheet.create({
   },
   text: {
     color: COLORS.white,
+    fontSize: 16,
+    fontFamily: Fonts.InterBold,
+    marginHorizontal: 18,
+  },
+  text2: {
+    color: COLORS.black,
     fontSize: 16,
     fontFamily: Fonts.InterBold,
     marginHorizontal: 18,
