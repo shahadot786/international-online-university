@@ -30,7 +30,7 @@ const Home = () => {
       <GetStartedBtn backgroundColor={COLORS.white}>Get Started</GetStartedBtn>
       <CourseList />
       <TrendingCourse />
-      <Promotion />
+      {/* <Promotion />
       <Explore />
       <Videos />
       <Pathway />
@@ -38,7 +38,7 @@ const Home = () => {
       <Review />
       <LearnMore />
       <Faq />
-      <Newsletter />
+      <Newsletter /> */}
     </ScrollView>
   );
 };

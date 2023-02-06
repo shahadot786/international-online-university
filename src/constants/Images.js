@@ -11,4 +11,6 @@ export default IMAGES = {
   promotion: require('../../assets/images/promotion.png'),
   success: require('../../assets/images/success.jpg'),
   teaching: require('../../assets/images/teaching.png'),
+  wishlist: require('../../assets/images/wishlist.png'),
+  courses: require('../../assets/images/courses.png'),
 };
