@@ -20,7 +20,7 @@ const SignIn = () => {
           <Heading color={COLORS.black} size={18} textAlign={'center'}>
             Sign In
           </Heading>
-          <SubHeading color={COLORS.black} size={16}>
+          <SubHeading textAlign={'center'} color={COLORS.black} size={16}>
             Welcome Back Learner, let’s start
           </SubHeading>
         </View>
@@ -94,15 +94,15 @@ const SignIn = () => {
               )}
             </Pressable>
           </View>
-          <SubHeading color={COLORS.black} size={11}>
+          <SubHeading textAlign={'center'} color={COLORS.black} size={11}>
             SIGN UP WITH YOUR ORGANIZATION
           </SubHeading>
           <View style={styles.warning}>
-            <SubHeading color={COLORS.gray} size={11}>
+            <SubHeading textAlign={'center'} color={COLORS.gray} size={11}>
               I accept iou's Terms of Use and Privacy Notice. Having trouble
               logging in? Learner help center
             </SubHeading>
-            <SubHeading color={COLORS.gray} size={11}>
+            <SubHeading textAlign={'center'} color={COLORS.gray} size={11}>
               This site is protected by reCAPTCHA Enterprise and the Google.
               Privacy Policy and Terms of Service apply.
             </SubHeading>

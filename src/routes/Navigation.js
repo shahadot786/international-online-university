@@ -8,6 +8,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SignIn from '../views/auth/SignIn';
 import COLORS from '../constants/Colors';
 import BottomTab from './BottomTab';
+import CategoriesListScreen from '../views/categories/CategoriesListScreen';
+import Colors from '../constants/Colors';
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
@@ -63,6 +65,17 @@ const Navigation = () => {
           name="SignIn"
           component={SignIn}
           options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="CategoriesListScreen"
+          component={CategoriesListScreen}
+          options={{
+            title: 'Categories',
+            headerStyle: {
+              backgroundColor: Colors.light,
+            },
+            headerTransparent: true,
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>

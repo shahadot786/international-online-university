@@ -9,19 +9,18 @@ import {
 import React, {useState} from 'react';
 import Colors from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
-import Images from '../../constants/Images';
 import Heading from '../../components/text/Heading';
 import SubHeading from '../../components/text/SubHeading';
 import Header from '../../components/util/Header';
 import HomeSlider from '../../components/slider/HomeSlider';
 import PromoDialog from '../../components/promotions/PromoDialog';
-import Categories from '../../components/list/Categories';
 import Data from '../../constants/Data';
 import TabBtn from '../../components/button/TabBtn';
+import {useNavigation} from '@react-navigation/native';
 
 const Featured = () => {
   const [selectedId, setSelectedId] = useState();
-
+  const navigation = useNavigation();
   const renderItem = item => {
     const backgroundColor =
       item.id === selectedId ? Colors.primary : Colors.lightPink;
@@ -51,7 +50,9 @@ const Featured = () => {
           <Heading color={Colors.black} size={22} textAlign={'left'}>
             Categories
           </Heading>
-          <TouchableOpacity activeOpacity={0.5}>
+          <TouchableOpacity
+            activeOpacity={0.5}
+            onPress={() => navigation.navigate('CategoriesListScreen')}>
             <Text style={styles.catText}>See all</Text>
           </TouchableOpacity>
         </View>

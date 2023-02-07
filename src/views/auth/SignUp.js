@@ -20,10 +20,10 @@ const SignUp = () => {
           <Heading color={COLORS.black} size={18} textAlign={'center'}>
             Sign Up
           </Heading>
-          <SubHeading color={COLORS.black} size={16}>
+          <SubHeading textAlign={'center'} color={COLORS.black} size={16}>
             Learn on your own time
           </SubHeading>
-          <SubHeading color={COLORS.black} size={16}>
+          <SubHeading textAlign={'center'} color={COLORS.black} size={16}>
             from top universities and instructors.
           </SubHeading>
         </View>
@@ -106,15 +106,15 @@ const SignUp = () => {
               )}
             </Pressable>
           </View>
-          <SubHeading color={COLORS.black} size={11}>
+          <SubHeading textAlign={'center'} color={COLORS.black} size={11}>
             SIGN UP WITH YOUR ORGANIZATION
           </SubHeading>
           <View style={styles.warning}>
-            <SubHeading color={COLORS.gray} size={11}>
+            <SubHeading textAlign={'center'} color={COLORS.gray} size={11}>
               I accept iou's Terms of Use and Privacy Notice. Having trouble
               logging in? Learner help center
             </SubHeading>
-            <SubHeading color={COLORS.gray} size={11}>
+            <SubHeading textAlign={'center'} color={COLORS.gray} size={11}>
               This site is protected by reCAPTCHA Enterprise and the Google.
               Privacy Policy and Terms of Service apply.
             </SubHeading>
