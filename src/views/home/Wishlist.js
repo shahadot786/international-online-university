@@ -3,6 +3,7 @@ import React from 'react';
 import Colors from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 import Images from '../../constants/Images';
+import Categories from '../../components/list/Categories';
 
 const Wishlist = () => {
   return (
@@ -50,6 +51,10 @@ const Wishlist = () => {
             Your wishlist will go here.
           </Text>
         </View>
+        <View style={styles.catView}>
+          <Text style={styles.catViewText}>Browse Categories</Text>
+          <Categories />
+        </View>
       </View>
     </ScrollView>
   );
@@ -61,5 +66,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.light,
+  },
+  catView: {
+    marginVertical: 80,
+  },
+  catViewText: {
+    fontSize: 16,
+    fontFamily: Fonts.InterBold,
+    color: Colors.black,
   },
 });

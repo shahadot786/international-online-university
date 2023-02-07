@@ -28,9 +28,9 @@ const Home = () => {
         placeholder={'Your Email Address'}
       />
       <GetStartedBtn backgroundColor={COLORS.white}>Get Started</GetStartedBtn>
-      <CourseList />
+      {/* <CourseList />
       <TrendingCourse />
-      {/* <Promotion />
+      <Promotion />
       <Explore />
       <Videos />
       <Pathway />

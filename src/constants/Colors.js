@@ -11,4 +11,5 @@ export default COLORS = {
   green: '#009245',
   transparent: 'transparent',
   blue: '#1976D2',
+  lightPink: '#EFEAEA',
 };
