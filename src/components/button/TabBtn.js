@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Fonts from '../../constants/Fonts';
 
 const TabBtn = ({onPress, color, backgroundColor, data}) => {
   return (
@@ -9,7 +10,7 @@ const TabBtn = ({onPress, color, backgroundColor, data}) => {
       style={[styles.button, {backgroundColor: backgroundColor}]}
       activeOpacity={0.8}>
       <View>
-        <Icon name="code" size={24} color={color} />
+        <Icon name={data.iconName} size={24} color={color} />
       </View>
       <View>
         {data.title && (
@@ -38,18 +39,15 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 15,
   },
-  btnText: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    textTransform: 'capitalize',
-  },
   text1: {
     fontSize: 13,
     textTransform: 'capitalize',
+    fontFamily: Fonts.InterRegular,
   },
   text2: {
     fontSize: 14,
     fontWeight: 'bold',
     textTransform: 'capitalize',
+    fontFamily: Fonts.InterBold,
   },
 });
