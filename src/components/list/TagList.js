@@ -61,12 +61,13 @@ const TagList = () => {
         const backgroundColor =
           item.id === selectedId ? Colors.primary : Colors.light;
         const color = item.id === selectedId ? 'white' : Colors.black;
-        const border = item.id === selectedId ? 0 : 1;
+        const borderColor =
+          item.id === selectedId ? Colors.primary : Colors.darkGray;
         return (
           <TagBtn
             onPress={() => setSelectedId(item.id)}
             key={item.id}
-            border={border}
+            borderColor={borderColor}
             color={color}
             backgroundColor={backgroundColor}>
             {item.title}

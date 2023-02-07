@@ -5,13 +5,47 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import Colors from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const Account = () => {
+  const [selectedId, setSelectedId] = useState();
+  const [selectedId2, setSelectedId2] = useState();
+  const data0 = [
+    {
+      id: 0,
+      name: 'Learning Reminder',
+    },
+  ];
+  const data = [
+    {
+      id: 0,
+      name: 'About IOU',
+    },
+    {
+      id: 1,
+      name: 'About IOU Business',
+    },
+    {
+      id: 2,
+      name: 'Community',
+    },
+    {
+      id: 3,
+      name: 'Frequently asked questions',
+    },
+    {
+      id: 4,
+      name: 'Share IOU App',
+    },
+    {
+      id: 5,
+      name: 'More',
+    },
+  ];
   const navigation = useNavigation();
   return (
     <ScrollView style={styles.container}>
@@ -27,141 +61,60 @@ const Account = () => {
           Account
         </Text>
         {/* Content */}
-        <TouchableOpacity
-          activeOpacity={0.5}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginRight: 10,
-            marginBottom: 20,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              color: Colors.black,
-              fontFamily: Fonts.InterBold,
-            }}>
-            Learning Reminder
-          </Text>
-          <Icon name="chevron-forward" color={Colors.black} size={24} />
-        </TouchableOpacity>
+        {data0.map(item => {
+          const color = item.id === selectedId ? Colors.primary : Colors.black;
+          return (
+            <TouchableOpacity
+              key={item.id}
+              onPress={() => setSelectedId(item.id)}
+              activeOpacity={0.5}
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginRight: 10,
+                marginBottom: 20,
+              }}>
+              <Text
+                style={{
+                  fontSize: 14,
+                  color: color,
+                  fontFamily: Fonts.InterBold,
+                }}>
+                {item.name}
+              </Text>
+              <Icon name="chevron-forward" color={color} size={24} />
+            </TouchableOpacity>
+          );
+        })}
         <Text style={{color: Colors.gray, fontSize: 14, marginBottom: 10}}>
           Help and Support
         </Text>
         {/* Content */}
-        <TouchableOpacity
-          activeOpacity={0.5}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginRight: 10,
-            marginBottom: 20,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              color: Colors.black,
-              fontFamily: Fonts.InterBold,
-            }}>
-            About IOU
-          </Text>
-          <Icon name="chevron-forward" color={Colors.black} size={24} />
-        </TouchableOpacity>
-        {/* Content */}
-        <TouchableOpacity
-          activeOpacity={0.5}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginRight: 10,
-            marginBottom: 20,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              color: Colors.black,
-              fontFamily: Fonts.InterBold,
-            }}>
-            About IOU Business
-          </Text>
-          <Icon name="chevron-forward" color={Colors.black} size={24} />
-        </TouchableOpacity>
-        {/* Content */}
-        <TouchableOpacity
-          activeOpacity={0.5}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginRight: 10,
-            marginBottom: 20,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              color: Colors.black,
-              fontFamily: Fonts.InterBold,
-            }}>
-            Community
-          </Text>
-          <Icon name="chevron-forward" color={Colors.black} size={24} />
-        </TouchableOpacity>
-        {/* Content */}
-        <TouchableOpacity
-          activeOpacity={0.5}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginRight: 10,
-            marginBottom: 20,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              color: Colors.black,
-              fontFamily: Fonts.InterBold,
-            }}>
-            Frequently asked questions
-          </Text>
-          <Icon name="chevron-forward" color={Colors.black} size={24} />
-        </TouchableOpacity>
-        {/* Content */}
-        <TouchableOpacity
-          activeOpacity={0.5}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginRight: 10,
-            marginBottom: 20,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              color: Colors.black,
-              fontFamily: Fonts.InterBold,
-            }}>
-            Share the IOU app
-          </Text>
-          <Icon name="chevron-forward" color={Colors.black} size={24} />
-        </TouchableOpacity>
-        {/* Content */}
-        <TouchableOpacity
-          activeOpacity={0.5}
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginRight: 10,
-            marginBottom: 20,
-          }}>
-          <Text
-            style={{
-              fontSize: 14,
-              color: Colors.black,
-              fontFamily: Fonts.InterBold,
-            }}>
-            More
-          </Text>
-          <Icon name="chevron-forward" color={Colors.black} size={24} />
-        </TouchableOpacity>
+        {data.map(item => {
+          const color = item.id === selectedId2 ? Colors.primary : Colors.black;
+          return (
+            <TouchableOpacity
+              key={item.id}
+              onPress={() => setSelectedId2(item.id)}
+              activeOpacity={0.5}
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginRight: 10,
+                marginBottom: 20,
+              }}>
+              <Text
+                style={{
+                  fontSize: 14,
+                  color: color,
+                  fontFamily: Fonts.InterBold,
+                }}>
+                {item.name}
+              </Text>
+              <Icon name="chevron-forward" color={color} size={24} />
+            </TouchableOpacity>
+          );
+        })}
 
         <Text style={{color: Colors.gray, fontSize: 14, marginBottom: 10}}>
           Diagnostics

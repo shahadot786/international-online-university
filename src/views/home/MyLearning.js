@@ -3,7 +3,7 @@ import React from 'react';
 import Colors from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 import Images from '../../constants/Images';
-import Categories from '../../components/list/Categories';
+import CategoryList from '../../components/list/CategoryList';
 
 const MyLearning = () => {
   return (
@@ -53,7 +53,7 @@ const MyLearning = () => {
         </View>
         <View style={styles.catView}>
           <Text style={styles.catViewText}>Browse Categories</Text>
-          <Categories />
+          <CategoryList />
         </View>
       </View>
     </ScrollView>

@@ -3,14 +3,14 @@ import React from 'react';
 import Colors from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 
-const TagBtn = ({children, onPress, color, backgroundColor, border}) => {
+const TagBtn = ({children, onPress, color, backgroundColor, borderColor}) => {
   return (
     <TouchableOpacity
       onPress={onPress}
       activeOpacity={1}
       style={[
         styles.btn,
-        {backgroundColor: backgroundColor, borderWidth: border},
+        {backgroundColor: backgroundColor, borderColor: borderColor},
       ]}>
       <Text style={[styles.btnText, {color: color}]}>{children}</Text>
     </TouchableOpacity>
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 1,
+    borderWidth:1
   },
   btnText: {
     textAlign: 'center',

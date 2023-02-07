@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    marginVertical: 10,
+    marginTop: 10,
+    marginBottom: 10,
   },
 });
