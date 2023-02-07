@@ -10,7 +10,7 @@ const Categories = () => {
       {Data.map(item => {
         const backgroundColor =
           item.id === selectedId ? Colors.primary : Colors.lightPink;
-        const color = item.id === selectedId ? 'white' : COLORS.gray;
+        const color = item.id === selectedId ? 'white' : Colors.gray;
         return (
           <TabBtn
             key={item.id}

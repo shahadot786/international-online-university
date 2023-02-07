@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import Tab2 from '../flatlist/Tab2';
 import Slider from '../flatlist/Slider';

@@ -8,7 +8,7 @@ const TabBtn = ({onPress, color, backgroundColor, data}) => {
     <TouchableOpacity
       onPress={onPress}
       style={[styles.button, {backgroundColor: backgroundColor}]}
-      activeOpacity={0.8}>
+      activeOpacity={1}>
       <View>
         <Icon name={data.iconName} size={24} color={color} />
       </View>
