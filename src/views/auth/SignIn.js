@@ -17,7 +17,7 @@ const SignIn = () => {
       <View style={styles.container}>
         <Header />
         <View style={styles.header}>
-          <Heading color={COLORS.black} size={18}>
+          <Heading color={COLORS.black} size={18} textAlign={'center'}>
             Sign In
           </Heading>
           <SubHeading color={COLORS.black} size={16}>

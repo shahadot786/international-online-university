@@ -2,6 +2,7 @@
 export default COLORS = {
   primary: '#E31F26',
   black: '#001514',
+  black500: '#2B2B2B',
   white: '#FFFFFF',
   light: '#F8F8F8',
   secondary: '#D6D6D6',

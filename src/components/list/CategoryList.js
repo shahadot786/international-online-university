@@ -10,7 +10,7 @@ const CategoryList = () => {
   return (
     <View style={styles.container}>
       {Data.map(item => {
-        const color = item.id === selectedId ? Colors.primary : Colors.darkGray;
+        const color = item.id === selectedId ? Colors.primary : Colors.black500;
         return (
           <TouchableOpacity
             key={item.id}

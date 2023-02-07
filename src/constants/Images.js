@@ -13,4 +13,10 @@ export default IMAGES = {
   teaching: require('../../assets/images/teaching.png'),
   wishlist: require('../../assets/images/wishlist.png'),
   courses: require('../../assets/images/courses.png'),
+  slider01: require('../../assets/images/slider01.jpg'),
+  slider02: require('../../assets/images/slider02.jpg'),
+  slider03: require('../../assets/images/slider03.png'),
+  slider04: require('../../assets/images/slider04.jpg'),
+  slider05: require('../../assets/images/slider05.jpg'),
+  slider06: require('../../assets/images/slider06.jpg'),
 };

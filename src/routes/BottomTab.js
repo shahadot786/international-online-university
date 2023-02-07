@@ -38,7 +38,7 @@ const BottomTab = () => {
       }}>
       <Tab.Screen
         name="Home"
-        component={Home}
+        component={Featured}
         options={{
           tabBarLabel: 'Featured',
           tabBarIcon: ({color}) => {
