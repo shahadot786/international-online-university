@@ -19,17 +19,21 @@ const Slider = () => {
       rating: '4.8 (1.2k)',
       student: '2.78k',
       time: '58 hours',
+      price: '$20',
+      tag: 'Highest Rated',
     },
     {
       id: 1,
       image: Images.slider03,
-      availableCourse: '17 Courses',
+      availableCourse: '',
       instituteName: 'Green University of Bangladesh',
       heading: 'The Business of Graphic Design',
       subHeading: 'Skill Set: Gratitude, Happiness',
       rating: '4.8 (1.2k)',
       student: '2.78k',
       time: '58 hours',
+      price: '$9.90',
+      tag: 'Best Seller',
     },
     {
       id: 2,
@@ -41,6 +45,8 @@ const Slider = () => {
       rating: '4.8 (1.2k)',
       student: '2.78k',
       time: '58 hours',
+      price: '$20',
+      tag: 'Highest Rated',
     },
     {
       id: 3,
@@ -52,6 +58,8 @@ const Slider = () => {
       rating: '4.8 (1.2k)',
       student: '2.78k',
       time: '58 hours',
+      price: '$20',
+      tag: 'Highest Rated',
     },
     {
       id: 4,
@@ -63,6 +71,8 @@ const Slider = () => {
       rating: '4.8 (1.2k)',
       student: '2.78k',
       time: '58 hours',
+      price: '$20',
+      tag: 'Highest Rated',
     },
   ];
   const scrollX = useRef(new Animated.Value(0)).current;

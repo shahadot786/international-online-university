@@ -16,6 +16,7 @@ import PromoDialog from '../../components/promotions/PromoDialog';
 import {useNavigation} from '@react-navigation/native';
 import CategorySlider from '../../components/slider/CategorySlider';
 import Slider from '../../components/flatlist/Slider';
+import Data from '../../constants/Data';
 
 const Featured = () => {
   //navigation const
@@ -45,38 +46,71 @@ const Featured = () => {
         <CategorySlider />
         {/* single course slide start */}
         <View style={styles.marginTop}>
-          <Heading
-            color={Colors.black}
-            size={22}
-            textAlign={'left'}
-            highlightText={'Design'}
-            highlightTextColor={Colors.primary}>
-            Top courses in{' '}
-          </Heading>
+          <View style={styles.headerView}>
+            <Heading
+              color={Colors.black}
+              size={22}
+              textAlign={'left'}
+              highlightText={'Design'}
+              highlightTextColor={Colors.primary}>
+              Top courses in{' '}
+            </Heading>
+            <TouchableOpacity
+              activeOpacity={0.5}
+              onPress={() =>
+                navigation.navigate('CategoryDetailsScreen', {
+                  categoryDetails: Data[6],
+                })
+              }>
+              <Text style={styles.catText}>See all</Text>
+            </TouchableOpacity>
+          </View>
           <Slider />
         </View>
         {/* single course slide start */}
         <View style={styles.marginTop}>
-          <Heading
-            color={Colors.black}
-            size={22}
-            textAlign={'left'}
-            highlightText={'Development'}
-            highlightTextColor={Colors.primary}>
-            Top courses in{' '}
-          </Heading>
+          <View style={styles.headerView}>
+            <Heading
+              color={Colors.black}
+              size={22}
+              textAlign={'left'}
+              highlightText={'Development'}
+              highlightTextColor={Colors.primary}>
+              Top courses in{' '}
+            </Heading>
+            <TouchableOpacity
+              activeOpacity={0.5}
+              onPress={() =>
+                navigation.navigate('CategoryDetailsScreen', {
+                  categoryDetails: Data[0],
+                })
+              }>
+              <Text style={styles.catText}>See all</Text>
+            </TouchableOpacity>
+          </View>
           <Slider />
         </View>
         {/* single course slide start */}
         <View style={styles.marginTop}>
-          <Heading
-            color={Colors.black}
-            size={22}
-            textAlign={'left'}
-            highlightText={'Business'}
-            highlightTextColor={Colors.primary}>
-            Top courses in{' '}
-          </Heading>
+          <View style={styles.headerView}>
+            <Heading
+              color={Colors.black}
+              size={22}
+              textAlign={'left'}
+              highlightText={'Business'}
+              highlightTextColor={Colors.primary}>
+              Top courses in{' '}
+            </Heading>
+            <TouchableOpacity
+              activeOpacity={0.5}
+              onPress={() =>
+                navigation.navigate('CategoryDetailsScreen', {
+                  categoryDetails: Data[1],
+                })
+              }>
+              <Text style={styles.catText}>See all</Text>
+            </TouchableOpacity>
+          </View>
           <Slider />
         </View>
       </View>
@@ -112,5 +146,10 @@ const styles = StyleSheet.create({
   },
   marginTop: {
     marginTop: 20,
+  },
+  headerView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 });
