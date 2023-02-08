@@ -10,6 +10,7 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
 import COLORS from '../../constants/Colors';
+import Fonts from '../../constants/Fonts';
 
 const CourseCard = ({image}) => {
   return (
@@ -25,7 +26,7 @@ const CourseCard = ({image}) => {
         </View>
         {/* text-1 */}
         <View style={styles.text1View}>
-          <Icon name="ribbon-outline" size={34} color={COLORS.primary} />
+          <Icon name="ribbon-outline" size={24} color={COLORS.primary} />
           <Text style={styles.text1}>Daffodil International University</Text>
         </View>
         {/* heading */}
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 6,
     elevation: 4,
-    paddingBottom: 20,
+    paddingBottom: 10,
     marginRight: 20,
     marginVertical: 10,
   },
@@ -92,6 +93,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     textAlign: 'center',
     marginTop: 3,
+    fontFamily: Fonts.InterBold,
   },
   text1View: {
     flexDirection: 'row',
@@ -102,13 +104,13 @@ const styles = StyleSheet.create({
   text1: {
     color: COLORS.black,
     fontSize: 12,
-    fontWeight: 'bold',
     marginLeft: 5,
+    fontFamily: Fonts.InterBold,
   },
   heading: {
     color: COLORS.black,
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 15,
+    fontFamily: Fonts.InterBold,
     marginHorizontal: 20,
   },
   text2: {
@@ -116,6 +118,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginHorizontal: 20,
     marginVertical: 10,
+    fontFamily: Fonts.InterRegular,
   },
   footer: {
     flexDirection: 'row',
@@ -126,6 +129,7 @@ const styles = StyleSheet.create({
   },
   footerText: {
     color: COLORS.black,
-    fontSize: 14,
+    fontSize: 12,
+    fontFamily: Fonts.InterRegular,
   },
 });
