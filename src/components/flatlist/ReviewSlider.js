@@ -49,32 +49,32 @@ const ReviewSlider = () => {
         'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,',
     },
   ];
-  const [index, setIndex] = useState(0);
-  const scrollX = useRef(new Animated.Value(0)).current;
-  const handelOnScroll = event => {
-    Animated.event(
-      [
-        {
-          nativeEvent: {
-            contentOffset: {
-              x: scrollX,
-            },
-          },
-        },
-      ],
-      {
-        useNativeDriver: false,
-      },
-    )(event);
-  };
+  // const [index, setIndex] = useState(0);
+  // const scrollX = useRef(new Animated.Value(0)).current;
+  // const handelOnScroll = event => {
+  //   Animated.event(
+  //     [
+  //       {
+  //         nativeEvent: {
+  //           contentOffset: {
+  //             x: scrollX,
+  //           },
+  //         },
+  //       },
+  //     ],
+  //     {
+  //       useNativeDriver: false,
+  //     },
+  //   )(event);
+  // };
 
-  const onViewableItemsChanged = useRef(({viewableItems}) => {
-    setIndex(viewableItems[0].index);
-  }).current;
+  // const onViewableItemsChanged = useRef(({viewableItems}) => {
+  //   setIndex(viewableItems[0].index);
+  // }).current;
 
-  const viewabilityConfig = useRef({
-    itemVisiblePercentThreshold: 50,
-  }).current;
+  // const viewabilityConfig = useRef({
+  //   itemVisiblePercentThreshold: 50,
+  // }).current;
   return (
     <View style={styles.reviews}>
       <FlatList
@@ -83,15 +83,12 @@ const ReviewSlider = () => {
         pagingEnabled
         snapToAlignment="center"
         showsHorizontalScrollIndicator={false}
-        onScroll={handelOnScroll}
-        onViewableItemsChanged={onViewableItemsChanged}
-        viewabilityConfig={viewabilityConfig}
         keyExtractor={item => item.id}
         renderItem={item => <ReviewCard data={item} />}
       />
-      <View>
+      {/* <View>
         <DotPagination data={data} scrollX={scrollX} index={index} />
-      </View>
+      </View> */}
     </View>
   );
 };
@@ -100,7 +97,7 @@ export default ReviewSlider;
 
 const styles = StyleSheet.create({
   reviews: {
-    marginVertical: 60,
     flex: 1,
+    marginTop: 15,
   },
 });

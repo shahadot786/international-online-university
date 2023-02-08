@@ -1,6 +1,6 @@
 import {Image, StyleSheet, Text, View, Dimensions} from 'react-native';
 import React from 'react';
-import COLORS from '../../constants/Colors';
+import Colors from '../../constants/Colors';
 
 const width = Dimensions.get('screen');
 const ReviewCard = ({data}) => {
@@ -26,11 +26,11 @@ export default ReviewCard;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: Colors.light,
     alignItems: 'flex-end',
   },
   content: {
-    backgroundColor: COLORS.light,
+    backgroundColor: Colors.secondary,
     marginHorizontal: 40,
     borderRadius: 25,
     alignItems: 'flex-end',
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
-    borderBottomColor: COLORS.light,
+    borderBottomColor: Colors.secondary,
     borderTopColor: 'transparent',
     marginBottom: 20,
     position: 'absolute',
@@ -69,13 +69,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginTop: 25,
-    color: COLORS.black,
+    color: Colors.black,
     marginRight: 20,
     marginBottom: 5,
     textTransform: 'capitalize',
   },
   country: {
-    color: COLORS.black,
+    color: Colors.black,
     marginRight: 20,
     marginBottom: 5,
     fontSize: 14,
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   review: {
-    color: COLORS.black,
+    color: Colors.black,
     marginHorizontal: 20,
     fontSize: 15,
     marginTop: 10,

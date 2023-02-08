@@ -17,6 +17,9 @@ import {useNavigation} from '@react-navigation/native';
 import CategorySlider from '../../components/slider/CategorySlider';
 import Slider from '../../components/flatlist/Slider';
 import Data from '../../constants/Data';
+import Promotion from '../../components/section/Promotion';
+import Pathway from '../../components/section/Pathway';
+import Review from '../../components/section/Review';
 
 const Featured = () => {
   //navigation const
@@ -113,6 +116,9 @@ const Featured = () => {
           </View>
           <Slider />
         </View>
+        <Promotion />
+        <Pathway />
+        {/* <Review /> */}
       </View>
     </ScrollView>
   );
@@ -125,7 +131,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginBottom: 65,
     backgroundColor: Colors.light,
-    marginBottom: 65,
   },
   contentView: {
     marginLeft: 20,

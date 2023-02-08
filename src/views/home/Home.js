@@ -20,7 +20,7 @@ import COLORS from '../../constants/Colors';
 const Home = () => {
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <Header />
+      {/* <Header />
       <Hero />
       <SingleInput
         borderColor={COLORS.primary}
@@ -28,7 +28,7 @@ const Home = () => {
         placeholder={'Your Email Address'}
       />
       <GetStartedBtn backgroundColor={COLORS.white}>Get Started</GetStartedBtn>
-      {/* <CourseList />
+      <CourseList />
       <TrendingCourse />
       <Promotion />
       <Explore />

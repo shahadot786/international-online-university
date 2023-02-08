@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../../components/util/Header';
 import Heading from '../../components/text/Heading';
 import SubHeading from '../../components/text/SubHeading';
-import COLORS from '../../constants/Colors';
+import Colors from '../../constants/Colors';
 import SingleInput from '../../components/textInput/SingleInput';
 import Fonts from '../../constants/Fonts';
 import GetStartedBtn from '../../components/button/GetStartedBtn';
@@ -17,10 +17,10 @@ const SignIn = () => {
       <View style={styles.container}>
         <Header />
         <View style={styles.header}>
-          <Heading color={COLORS.black} size={18} textAlign={'center'}>
+          <Heading color={Colors.black} size={18} textAlign={'center'}>
             Sign In
           </Heading>
-          <SubHeading textAlign={'center'} color={COLORS.black} size={16}>
+          <SubHeading textAlign={'center'} color={Colors.black} size={16}>
             Welcome Back Learner, let’s start
           </SubHeading>
         </View>
@@ -30,8 +30,8 @@ const SignIn = () => {
           <View>
             <Text style={styles.text}>Email</Text>
             <SingleInput
-              borderColor={COLORS.secondary}
-              backgroundColor={COLORS.white}
+              borderColor={Colors.secondary}
+              backgroundColor={Colors.white}
               placeholder="Your Email Address"
             />
           </View>
@@ -39,8 +39,8 @@ const SignIn = () => {
           <View>
             <Text style={styles.text}>Password</Text>
             <SingleInput
-              borderColor={COLORS.secondary}
-              backgroundColor={COLORS.white}
+              borderColor={Colors.secondary}
+              backgroundColor={Colors.white}
               placeholder="Your Password"
               secureTextEntry={true}
             />
@@ -48,7 +48,7 @@ const SignIn = () => {
               style={{
                 fontFamily: Fonts.HelveticaRegular,
                 fontSize: 10,
-                color: COLORS.gray,
+                color: Colors.gray,
                 marginTop: 1,
               }}>
               BETWEEN 8 AND 72 CHARACTERS
@@ -59,22 +59,22 @@ const SignIn = () => {
           <IconButton
             title={'Continue With Facebook'}
             iconName={'logo-facebook'}
-            backgroundColor={COLORS.blue}
-            textColor={COLORS.white}
+            backgroundColor={Colors.blue}
+            textColor={Colors.white}
           />
           <IconButton
             title={'Continue With Google'}
             iconName={'logo-google'}
-            backgroundColor={COLORS.primary}
-            textColor={COLORS.white}
+            backgroundColor={Colors.primary}
+            textColor={Colors.white}
           />
           <IconButton
             title={'Continue With Apple'}
             iconName={'logo-apple'}
-            backgroundColor={COLORS.black}
-            textColor={COLORS.white}
+            backgroundColor={Colors.black}
+            textColor={Colors.white}
           />
-          <Heading color={COLORS.black} size={14}>
+          <Heading color={Colors.black} size={14}>
             Don't have an account?
           </Heading>
           <View style={styles.navigationView}>
@@ -94,15 +94,15 @@ const SignIn = () => {
               )}
             </Pressable>
           </View>
-          <SubHeading textAlign={'center'} color={COLORS.black} size={11}>
+          <SubHeading textAlign={'center'} color={Colors.black} size={11}>
             SIGN UP WITH YOUR ORGANIZATION
           </SubHeading>
           <View style={styles.warning}>
-            <SubHeading textAlign={'center'} color={COLORS.gray} size={11}>
+            <SubHeading textAlign={'center'} color={Colors.gray} size={11}>
               I accept iou's Terms of Use and Privacy Notice. Having trouble
               logging in? Learner help center
             </SubHeading>
-            <SubHeading textAlign={'center'} color={COLORS.gray} size={11}>
+            <SubHeading textAlign={'center'} color={Colors.gray} size={11}>
               This site is protected by reCAPTCHA Enterprise and the Google.
               Privacy Policy and Terms of Service apply.
             </SubHeading>
@@ -116,7 +116,7 @@ const SignIn = () => {
 export default SignIn;
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.light,
+    backgroundColor: Colors.light,
     flex: 1,
   },
   header: {
@@ -130,19 +130,19 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   text: {
-    color: COLORS.black,
+    color: Colors.black,
     fontSize: 16,
     fontFamily: Fonts.InterRegular,
     marginBottom: 8,
   },
   text2: {
-    color: COLORS.primary,
-    fontSize: 16,
+    color: Colors.primary,
+    fontSize: 12,
     fontFamily: Fonts.InterBold,
   },
   text3: {
-    color: COLORS.black,
-    fontSize: 16,
+    color: Colors.black,
+    fontSize: 12,
     fontFamily: Fonts.InterBold,
   },
   warning: {

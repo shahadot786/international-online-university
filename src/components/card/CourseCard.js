@@ -10,9 +10,9 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
 const screenHeight = Dimensions.get('screen');
-import COLORS from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 import Colors from '../../constants/Colors';
+import HighlightBtn from '../button/HighlightBtn';
 
 const CourseCard = ({onPress, data}) => {
   return (
@@ -31,7 +31,7 @@ const CourseCard = ({onPress, data}) => {
         <View style={styles.contentView}>
           {/* text-1 */}
           <View style={styles.text1View}>
-            <Icon name="ribbon-outline" size={20} color={COLORS.primary} />
+            <Icon name="ribbon-outline" size={20} color={Colors.primary} />
             <Text style={styles.text1}>
               {data.instituteName?.length > 34
                 ? `${data.instituteName.slice(0, 34)}..`
@@ -52,16 +52,16 @@ const CourseCard = ({onPress, data}) => {
           </Text>
           {/* footer */}
           <View style={styles.footer}>
-            <Icon name="star" size={16} color={COLORS.yellow} />
+            <Icon name="star" size={16} color={Colors.yellow} />
             <Text style={styles.footerText}>{data.rating}</Text>
-            <Icon name="people-outline" size={16} color={COLORS.black} />
+            <Icon name="people-outline" size={16} color={Colors.black} />
             <Text style={styles.footerText}>{data.student}</Text>
-            <Icon name="time-outline" size={16} color={COLORS.black} />
+            <Icon name="time-outline" size={16} color={Colors.black} />
             <Text style={styles.footerText}>{data.time}</Text>
           </View>
           {/* price */}
           <Text style={styles.price}>{data.price}</Text>
-          {data.tag && <Text style={styles.tag}>{data.tag}</Text>}
+          {data.tag && <HighlightBtn title={data.tag} />}
         </View>
       </View>
     </TouchableOpacity>
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     right: 15,
-    backgroundColor: COLORS.primary,
+    backgroundColor: Colors.primary,
     paddingHorizontal: 10,
     paddingVertical: 6,
     borderRadius: 8,
@@ -120,18 +120,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text1: {
-    color: COLORS.black,
+    color: Colors.black,
     fontSize: 11,
     marginLeft: 5,
     fontFamily: Fonts.InterBold,
   },
   heading: {
-    color: COLORS.black,
+    color: Colors.black,
     fontSize: 13,
     fontFamily: Fonts.InterBold,
   },
   text2: {
-    color: COLORS.black,
+    color: Colors.black,
     fontSize: 11,
     marginVertical: 6,
     fontFamily: Fonts.InterRegular,
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   footerText: {
-    color: COLORS.black,
+    color: Colors.black,
     fontSize: 11,
     fontFamily: Fonts.InterRegular,
   },
@@ -151,17 +151,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: Fonts.InterBold,
     color: Colors.black,
-  },
-  tag: {
-    backgroundColor: Colors.darkGray,
-    height: 30,
-    width: 120,
-    textAlign: 'center',
-    fontSize: 14,
-    fontFamily: Fonts.InterBold,
-    color: Colors.white,
-    borderRadius: 4,
-    paddingVertical: 5,
-    marginTop:2
   },
 });

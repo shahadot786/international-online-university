@@ -3,17 +3,17 @@ import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import Slider from '../flatlist/Slider';
-import COLORS from '../../constants/Colors';
+import Colors from '../../constants/Colors';
 
 const TrendingCourse = () => {
   return (
     <View style={styles.container}>
       {/* heading */}
       <View>
-        <Heading color={COLORS.primary} size={18}>
+        <Heading color={Colors.primary} size={18} textAlign={'center'}>
           Explore Our Best Trending Course
         </Heading>
-        <SubHeading color={COLORS.black} size={16}>
+        <SubHeading color={Colors.black} size={16} textAlign={'center'}>
           Sub Title Goes Here
         </SubHeading>
       </View>
@@ -29,7 +29,7 @@ export default TrendingCourse;
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 100,
+    paddingTop: 60,
     justifyContent: 'center',
     alignItems: 'center',
     flex: 1,

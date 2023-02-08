@@ -40,7 +40,7 @@ export default Pathway;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.light,
     flex: 1,
     paddingTop: 55,
   },

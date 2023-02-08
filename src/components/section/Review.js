@@ -3,16 +3,16 @@ import React from 'react';
 import Heading from '../text/Heading';
 import SubHeading from '../text/SubHeading';
 import ReviewSlider from '../flatlist/ReviewSlider';
-import COLORS from '../../constants/Colors';
+import Colors from '../../constants/Colors';
 
 const Review = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Heading color={COLORS.black} size={20}>
+        <Heading color={Colors.black} size={20} textAlign={'center'}>
           See what our members are saying.
         </Heading>
-        <SubHeading color={COLORS.black} size={16}>
+        <SubHeading color={Colors.black} size={16} textAlign={'center'}>
           Sub Title Goes Here
         </SubHeading>
       </View>
@@ -28,7 +28,7 @@ export default Review;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
-    paddingVertical: 25,
+    backgroundColor: Colors.light,
+    paddingVertical: 0,
   },
 });

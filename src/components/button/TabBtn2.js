@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
-import COLORS from '../../constants/Colors';
+import Colors from '../../constants/Colors';
 
 const TabBtn2 = ({onPress, color, borderBottomColor, data}) => {
   return (
@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     marginVertical: 10,
     borderBottomWidth: 2,
-    borderBottomColor: COLORS.primary,
+    borderBottomColor: Colors.primary,
     paddingHorizontal: 10,
   },
   text2: {
     fontWeight: 'bold',
     fontSize: 16,
-    color: COLORS.primary,
+    color: Colors.primary,
   },
 });

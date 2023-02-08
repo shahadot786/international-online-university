@@ -59,7 +59,7 @@ const Slider = () => {
       student: '2.78k',
       time: '58 hours',
       price: '$20',
-      tag: 'Highest Rated',
+      tag: '',
     },
     {
       id: 4,

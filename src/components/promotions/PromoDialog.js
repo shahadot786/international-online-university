@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: Colors.primary,
     flexDirection: 'row',
-    paddingVertical: 14,
+    paddingVertical: 8,
   },
   text: {
     fontSize: 15,
