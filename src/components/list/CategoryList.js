@@ -4,9 +4,15 @@ import Data from '../../constants/Data';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Colors from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
+import {useNavigation} from '@react-navigation/native';
 
 const CategoryList = () => {
   const [selectedId, setSelectedId] = useState();
+  const navigation = useNavigation();
+  const navigateData = item => {
+    setSelectedId(item.id);
+    navigation.navigate('CategoryDetailsScreen', {categoryDetails: item});
+  };
   return (
     <View style={styles.container}>
       {Data.map(item => {
@@ -14,7 +20,7 @@ const CategoryList = () => {
         return (
           <TouchableOpacity
             key={item.id}
-            onPress={() => setSelectedId(item.id)}
+            onPress={() => navigateData(item)}
             style={styles.categories}
             activeOpacity={0.4}>
             <Icon name={item.iconName} size={22} color={color} />

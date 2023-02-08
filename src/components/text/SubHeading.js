@@ -2,13 +2,18 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Fonts from '../../constants/Fonts';
 
-const SubHeading = ({children, color, size, textAlign}) => {
+const SubHeading = ({children, color, size, textAlign, bold}) => {
   return (
     <View>
       <Text
         style={[
           styles.subHeading,
-          {color: color, fontSize: size, textAlign: textAlign},
+          {
+            color: color,
+            fontSize: size,
+            textAlign: textAlign,
+            fontWeight: bold,
+          },
         ]}>
         {children}
       </Text>

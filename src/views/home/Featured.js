@@ -4,9 +4,8 @@ import {
   View,
   ScrollView,
   TouchableOpacity,
-  FlatList,
 } from 'react-native';
-import React, {useState} from 'react';
+import React from 'react';
 import Colors from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 import Heading from '../../components/text/Heading';
@@ -14,26 +13,13 @@ import SubHeading from '../../components/text/SubHeading';
 import Header from '../../components/util/Header';
 import HomeSlider from '../../components/slider/HomeSlider';
 import PromoDialog from '../../components/promotions/PromoDialog';
-import Data from '../../constants/Data';
-import TabBtn from '../../components/button/TabBtn';
 import {useNavigation} from '@react-navigation/native';
+import CategorySlider from '../../components/slider/CategorySlider';
+import Slider from '../../components/flatlist/Slider';
 
 const Featured = () => {
-  const [selectedId, setSelectedId] = useState();
+  //navigation const
   const navigation = useNavigation();
-  const renderItem = item => {
-    const backgroundColor =
-      item.id === selectedId ? Colors.primary : Colors.lightPink;
-    const color = item.id === selectedId ? 'white' : Colors.gray;
-    return (
-      <TabBtn
-        data={item}
-        backgroundColor={backgroundColor}
-        color={color}
-        onPress={() => setSelectedId(item.id)}
-      />
-    );
-  };
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       <Header />
@@ -56,14 +42,43 @@ const Featured = () => {
             <Text style={styles.catText}>See all</Text>
           </TouchableOpacity>
         </View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          <FlatList
-            data={Data}
-            keyExtractor={item => item.id}
-            numColumns={Math.ceil(Data.length / 2)}
-            renderItem={({item}) => renderItem(item)}
-          />
-        </ScrollView>
+        <CategorySlider />
+        {/* single course slide start */}
+        <View style={styles.marginTop}>
+          <Heading
+            color={Colors.black}
+            size={22}
+            textAlign={'left'}
+            highlightText={'Design'}
+            highlightTextColor={Colors.primary}>
+            Top courses in{' '}
+          </Heading>
+          <Slider />
+        </View>
+        {/* single course slide start */}
+        <View style={styles.marginTop}>
+          <Heading
+            color={Colors.black}
+            size={22}
+            textAlign={'left'}
+            highlightText={'Development'}
+            highlightTextColor={Colors.primary}>
+            Top courses in{' '}
+          </Heading>
+          <Slider />
+        </View>
+        {/* single course slide start */}
+        <View style={styles.marginTop}>
+          <Heading
+            color={Colors.black}
+            size={22}
+            textAlign={'left'}
+            highlightText={'Business'}
+            highlightTextColor={Colors.primary}>
+            Top courses in{' '}
+          </Heading>
+          <Slider />
+        </View>
       </View>
     </ScrollView>
   );
@@ -94,5 +109,8 @@ const styles = StyleSheet.create({
     color: Colors.blue,
     fontSize: 13,
     fontFamily: Fonts.InterBold,
+  },
+  marginTop: {
+    marginTop: 20,
   },
 });

@@ -10,15 +10,14 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
 import COLORS from '../../constants/Colors';
-import IMAGES from '../../constants/Images';
 
-const CourseCard = () => {
+const CourseCard = ({image}) => {
   return (
     <TouchableOpacity activeOpacity={0.8}>
-      <View style={[styles.container, {width: screenWidth.width - 60}]}>
+      <View style={[styles.container, {width: screenWidth.width / 1.7}]}>
         {/* image */}
         <View style={styles.imageView}>
-          <Image style={styles.image} source={IMAGES.card} />
+          <Image style={styles.image} source={image} />
           <View style={styles.courseView}>
             <Icon name="layers-outline" size={24} color="white" />
             <Text style={styles.courseText}>7 Courses</Text>
@@ -41,11 +40,11 @@ const CourseCard = () => {
         </View>
         {/* footer */}
         <View style={styles.footer}>
-          <Icon name="star" size={20} color={COLORS.yellow} />
+          <Icon name="star" size={16} color={COLORS.yellow} />
           <Text style={styles.footerText}>4.8 (1.2k)</Text>
-          <Icon name="people-outline" size={20} color={COLORS.black} />
+          <Icon name="people-outline" size={16} color={COLORS.black} />
           <Text style={styles.footerText}>2.78k</Text>
-          <Icon name="time-outline" size={20} color={COLORS.black} />
+          <Icon name="time-outline" size={16} color={COLORS.black} />
           <Text style={styles.footerText}>58 hours</Text>
         </View>
       </View>
@@ -61,11 +60,11 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     elevation: 4,
     paddingBottom: 20,
-    marginHorizontal: 10,
+    marginRight: 20,
     marginVertical: 10,
   },
   imageView: {
-    height: 200,
+    height: 140,
     width: '100%',
     position: 'relative',
   },
@@ -122,7 +121,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginHorizontal: 20,
     alignItems: 'center',
-    gap: 8,
+    gap: 3,
     marginVertical: 5,
   },
   footerText: {

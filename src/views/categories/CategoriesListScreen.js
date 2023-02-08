@@ -1,13 +1,16 @@
-import {StyleSheet, ScrollView} from 'react-native';
+import {StyleSheet, ScrollView, SafeAreaView} from 'react-native';
 import React from 'react';
 import CategoryList from '../../components/list/CategoryList';
 import Colors from '../../constants/Colors';
+import GlobalStyle from '../../utils/GlobalStyle';
 
 const CategoriesListScreen = () => {
   return (
-    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
-      <CategoryList />
-    </ScrollView>
+    <SafeAreaView style={[styles.container, GlobalStyle.AndroidSafeArea]}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <CategoryList />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -18,6 +21,5 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingLeft: 20,
     backgroundColor: Colors.light,
-    paddingBottom: 65,
   },
 });
