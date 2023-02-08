@@ -11,6 +11,7 @@ import BottomTab from './BottomTab';
 import CategoriesListScreen from '../views/categories/CategoriesListScreen';
 import Colors from '../constants/Colors';
 import CategoryDetailsScreen from '../views/categories/CategoryDetailsScreen';
+import CourseDetails from '../views/courses/CourseDetails';
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
@@ -83,6 +84,18 @@ const Navigation = () => {
           component={CategoryDetailsScreen}
           options={{
             title: 'Category Details',
+            headerStyle: {
+              backgroundColor: Colors.light,
+            },
+            headerTransparent: true,
+            // headerShown: true,
+          }}
+        />
+        <Stack.Screen
+          name="CourseDetails"
+          component={CourseDetails}
+          options={{
+            title: 'Course Details',
             headerStyle: {
               backgroundColor: Colors.light,
             },

@@ -9,44 +9,55 @@ import {
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
+const screenHeight = Dimensions.get('screen');
 import COLORS from '../../constants/Colors';
 import Fonts from '../../constants/Fonts';
 
-const CourseCard = ({image}) => {
+const CourseCard = ({onPress, data}) => {
   return (
-    <TouchableOpacity activeOpacity={0.8}>
+    <TouchableOpacity onPress={onPress} activeOpacity={0.8}>
       <View style={[styles.container, {width: screenWidth.width / 1.7}]}>
         {/* image */}
         <View style={styles.imageView}>
-          <Image style={styles.image} source={image} />
+          <Image style={styles.image} source={data.image} />
           <View style={styles.courseView}>
             <Icon name="layers-outline" size={24} color="white" />
-            <Text style={styles.courseText}>7 Courses</Text>
+            <Text style={styles.courseText}>{data.availableCourse}</Text>
           </View>
         </View>
         {/* text-1 */}
         <View style={styles.text1View}>
           <Icon name="ribbon-outline" size={24} color={COLORS.primary} />
-          <Text style={styles.text1}>Daffodil International University</Text>
+          <Text style={styles.text1}>
+            {data.instituteName?.length > 34
+              ? `${data.instituteName.slice(0, 34)}..`
+              : data.instituteName}
+          </Text>
         </View>
         {/* heading */}
         <View>
           <Text style={styles.heading}>
-            The Business of Graphic Design: Protect & Perfect Your Passion
+            {data.heading?.length > 80
+              ? `${data.heading.slice(0, 80)}..`
+              : data.heading}
           </Text>
         </View>
         {/* text-2 */}
         <View>
-          <Text style={styles.text2}>Skill Set: Gratitude, Happiness</Text>
+          <Text style={styles.text2}>
+            {data.subHeading?.length > 34
+              ? `${data.subHeading.slice(0, 34)}..`
+              : data.subHeading}
+          </Text>
         </View>
         {/* footer */}
         <View style={styles.footer}>
           <Icon name="star" size={16} color={COLORS.yellow} />
-          <Text style={styles.footerText}>4.8 (1.2k)</Text>
+          <Text style={styles.footerText}>{data.rating}</Text>
           <Icon name="people-outline" size={16} color={COLORS.black} />
-          <Text style={styles.footerText}>2.78k</Text>
+          <Text style={styles.footerText}>{data.student}</Text>
           <Icon name="time-outline" size={16} color={COLORS.black} />
-          <Text style={styles.footerText}>58 hours</Text>
+          <Text style={styles.footerText}>{data.time}</Text>
         </View>
       </View>
     </TouchableOpacity>
@@ -63,6 +74,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     marginRight: 20,
     marginVertical: 10,
+    height: screenHeight.height / 2.6,
   },
   imageView: {
     height: 140,
