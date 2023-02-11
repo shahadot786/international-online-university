@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     marginRight: 20,
     marginVertical: 10,
-    height: screenHeight.height / 2.5,
+    height: screenHeight.height / 2.3,
   },
   contentView: {
     paddingHorizontal: 8,
