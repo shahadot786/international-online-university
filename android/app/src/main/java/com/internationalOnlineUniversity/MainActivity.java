@@ -27,7 +27,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "internationalOnlineUniversity";
+    return "IOU";
   }
 
   // @Override

@@ -48,7 +48,7 @@ const CourseDetails = ({route, navigation}) => {
             <Icon name="time-outline" size={16} color={Colors.black} />
             <Text style={styles.footerText}>{courseData.time}</Text>
           </View>
-          <HighlightBtn title={courseData.tag} />
+          {courseData.tag && <HighlightBtn title={courseData.tag} />}
           <GetStartedBtn>Start Now</GetStartedBtn>
           <Text style={styles.priceViewText}>
             Starting at {courseData.price}/month (billed annually) for all

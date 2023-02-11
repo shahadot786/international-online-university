@@ -9,7 +9,6 @@ import {
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 const screenWidth = Dimensions.get('screen');
-const screenHeight = Dimensions.get('screen');
 import Fonts from '../../constants/Fonts';
 import Colors from '../../constants/Colors';
 import HighlightBtn from '../button/HighlightBtn';
@@ -17,7 +16,7 @@ import HighlightBtn from '../button/HighlightBtn';
 const CourseCard = ({onPress, data}) => {
   return (
     <TouchableOpacity onPress={onPress} activeOpacity={0.8}>
-      <View style={[styles.container, {width: screenWidth.width / 1.8}]}>
+      <View style={[styles.container, {width: screenWidth.width / 1.6}]}>
         {/* image */}
         <View style={styles.imageView}>
           <Image style={styles.image} source={data.image} />
@@ -61,7 +60,7 @@ const CourseCard = ({onPress, data}) => {
           </View>
           {/* price */}
           <Text style={styles.price}>{data.price}</Text>
-          {data.tag && <HighlightBtn title={data.tag} />}
+        {data.tag && <HighlightBtn title={data.tag} />}
         </View>
       </View>
     </TouchableOpacity>
@@ -78,7 +77,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     marginRight: 20,
     marginVertical: 10,
-    height: screenHeight.height / 2.3,
+    paddingBottom:20
   },
   contentView: {
     paddingHorizontal: 8,

@@ -19,7 +19,6 @@ import Slider from '../../components/flatlist/Slider';
 import Data from '../../constants/Data';
 import Promotion from '../../components/section/Promotion';
 import Pathway from '../../components/section/Pathway';
-import Review from '../../components/section/Review';
 
 const Featured = () => {
   //navigation const
@@ -37,7 +36,7 @@ const Featured = () => {
           Skills for your present(and future)
         </SubHeading>
         <View style={styles.catView}>
-          <Heading color={Colors.black} size={22} textAlign={'left'}>
+          <Heading color={Colors.black} size={20} textAlign={'left'}>
             Categories
           </Heading>
           <TouchableOpacity
@@ -52,7 +51,7 @@ const Featured = () => {
           <View style={styles.headerView}>
             <Heading
               color={Colors.black}
-              size={22}
+              size={20}
               textAlign={'left'}
               highlightText={'Design'}
               highlightTextColor={Colors.primary}>
@@ -75,7 +74,7 @@ const Featured = () => {
           <View style={styles.headerView}>
             <Heading
               color={Colors.black}
-              size={22}
+              size={20}
               textAlign={'left'}
               highlightText={'Development'}
               highlightTextColor={Colors.primary}>
@@ -98,7 +97,7 @@ const Featured = () => {
           <View style={styles.headerView}>
             <Heading
               color={Colors.black}
-              size={22}
+              size={20}
               textAlign={'left'}
               highlightText={'Business'}
               highlightTextColor={Colors.primary}>

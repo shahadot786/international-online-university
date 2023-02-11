@@ -5,8 +5,8 @@ import Fonts from '../../constants/Fonts';
 
 const HighlightBtn = ({title}) => {
   return (
-    <View>
-      <Text style={styles.tag}>{title}</Text>
+    <View style={styles.tag}>
+      <Text style={styles.tagText}>{title}</Text>
     </View>
   );
 };
@@ -15,15 +15,17 @@ export default HighlightBtn;
 
 const styles = StyleSheet.create({
   tag: {
-    backgroundColor: Colors.darkGray,
+    backgroundColor: Colors.yellow,
     height: 30,
     width: 120,
+    borderRadius: 4,
+    paddingVertical: 5,
+    marginTop: 5,
+  },
+  tagText: {
     textAlign: 'center',
     fontSize: 14,
     fontFamily: Fonts.InterBold,
-    color: Colors.white,
-    borderRadius: 4,
-    paddingVertical: 5,
-    marginTop: 2,
+    color: Colors.black,
   },
 });
